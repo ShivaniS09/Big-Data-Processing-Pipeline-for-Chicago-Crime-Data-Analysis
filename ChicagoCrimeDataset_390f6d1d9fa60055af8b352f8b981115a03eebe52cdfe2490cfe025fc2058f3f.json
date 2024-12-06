@@ -1,0 +1,9017 @@
+{
+  "defaultProfileConfiguration": {
+    "datasetConfiguration": {
+      "includedStatistics": [
+        "DUPLICATE_ROWS_COUNT",
+        "CORRELATION"
+      ],
+      "parameters": {
+        "CORRELATION": {
+          "columnNumber": "10"
+        }
+      }
+    },
+    "columnConfiguration": {
+      "booleanColumn": {
+        "includedStatistics": [
+          "MISSING_VALUES_COUNT",
+          "DISTINCT_VALUES_COUNT",
+          "ENTROPY",
+          "UNIQUE_VALUES_COUNT",
+          "MOST_COMMON_VALUES"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          }
+        }
+      },
+      "stringColumn": {
+        "includedStatistics": [
+          "MEAN",
+          "MISSING_VALUES_COUNT",
+          "MEDIAN",
+          "STANDARD_DEVIATION",
+          "DISTINCT_VALUES_COUNT",
+          "MODE",
+          "MAX",
+          "ENTROPY",
+          "UNIQUE_VALUES_COUNT",
+          "VALUE_DISTRIBUTION",
+          "MIN",
+          "OUTLIER_DETECTION",
+          "MOST_COMMON_VALUES"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          },
+          "OUTLIER_DETECTION": {
+            "threshold": "3",
+            "sampleSize": "50"
+          },
+          "VALUE_DISTRIBUTION": {
+            "binNumber": "20"
+          }
+        }
+      },
+      "numericColumn": {
+        "includedStatistics": [
+          "ZEROS_COUNT",
+          "MAX",
+          "UNIQUE_VALUES_COUNT",
+          "OUTLIER_DETECTION",
+          "Z_SCORE_DISTRIBUTION",
+          "MEAN",
+          "MEDIAN",
+          "VARIANCE",
+          "STANDARD_DEVIATION",
+          "MODE",
+          "MINIMUM_VALUES",
+          "MEDIAN_ABSOLUTE_DEVIATION",
+          "VALUE_DISTRIBUTION",
+          "MOST_COMMON_VALUES",
+          "MAXIMUM_VALUES",
+          "SUM",
+          "KURTOSIS",
+          "MIN",
+          "INTER_QUARTILE_RANGE",
+          "RANGE",
+          "MISSING_VALUES_COUNT",
+          "PERCENTILES",
+          "DISTINCT_VALUES_COUNT",
+          "ENTROPY",
+          "SKEWNESS"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          },
+          "MINIMUM_VALUES": {
+            "sampleSize": "5"
+          },
+          "MAXIMUM_VALUES": {
+            "sampleSize": "5"
+          },
+          "OUTLIER_DETECTION": {
+            "threshold": "3",
+            "sampleSize": "50"
+          },
+          "VALUE_DISTRIBUTION": {
+            "binNumber": "20"
+          },
+          "Z_SCORE_DISTRIBUTION": {
+            "binNumber": "20"
+          }
+        }
+      }
+    }
+  },
+  "datasetConfigurationOverride": {},
+  "sampleSize": 7842937,
+  "duplicateRowsCount": 0,
+  "columns": [
+    {
+      "name": "ID",
+      "type": "int",
+      "correlations": {
+        "ID": 1.0,
+        "Beat": -0.038560108087839405,
+        "District": -0.004160084556029841,
+        "Ward": 0.02199465785427574,
+        "Community Area": -0.014152307256540078,
+        "X Coordinate": 0.007443618300593002,
+        "Y Coordinate": 0.00012796672516208687,
+        "Year": 0.9842047780320573,
+        "Latitude": 9.326034742443518e-05,
+        "Longitude": 0.0075420870107295885
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 7842937,
+      "uniqueValuesCount": 7842937,
+      "entropy": 15.875123939594022,
+      "mostCommonValues": [
+        {
+          "value": 11646166,
+          "count": 1
+        },
+        {
+          "value": 11643334,
+          "count": 1
+        },
+        {
+          "value": 10225155,
+          "count": 1
+        },
+        {
+          "value": 11227586,
+          "count": 1
+        },
+        {
+          "value": 11227509,
+          "count": 1
+        },
+        {
+          "value": 11227569,
+          "count": 1
+        },
+        {
+          "value": 10226395,
+          "count": 1
+        },
+        {
+          "value": 11029462,
+          "count": 1
+        },
+        {
+          "value": 9771966,
+          "count": 1
+        },
+        {
+          "value": 11243284,
+          "count": 1
+        },
+        {
+          "value": 11228908,
+          "count": 1
+        },
+        {
+          "value": 11229066,
+          "count": 1
+        },
+        {
+          "value": 11046665,
+          "count": 1
+        },
+        {
+          "value": 9745335,
+          "count": 1
+        },
+        {
+          "value": 11229972,
+          "count": 1
+        },
+        {
+          "value": 11648310,
+          "count": 1
+        },
+        {
+          "value": 11229840,
+          "count": 1
+        },
+        {
+          "value": 11229533,
+          "count": 1
+        },
+        {
+          "value": 11451044,
+          "count": 1
+        },
+        {
+          "value": 11648241,
+          "count": 1
+        },
+        {
+          "value": 5253983,
+          "count": 1
+        },
+        {
+          "value": 11048254,
+          "count": 1
+        },
+        {
+          "value": 11244539,
+          "count": 1
+        },
+        {
+          "value": 10232319,
+          "count": 1
+        },
+        {
+          "value": 11032713,
+          "count": 1
+        },
+        {
+          "value": 11230401,
+          "count": 1
+        },
+        {
+          "value": 11196013,
+          "count": 1
+        },
+        {
+          "value": 11450011,
+          "count": 1
+        },
+        {
+          "value": 10233302,
+          "count": 1
+        },
+        {
+          "value": 11231298,
+          "count": 1
+        },
+        {
+          "value": 11226948,
+          "count": 1
+        },
+        {
+          "value": 11228746,
+          "count": 1
+        },
+        {
+          "value": 11232049,
+          "count": 1
+        },
+        {
+          "value": 10234607,
+          "count": 1
+        },
+        {
+          "value": 11232730,
+          "count": 1
+        },
+        {
+          "value": 11231026,
+          "count": 1
+        },
+        {
+          "value": 11651011,
+          "count": 1
+        },
+        {
+          "value": 11232500,
+          "count": 1
+        },
+        {
+          "value": 11232583,
+          "count": 1
+        },
+        {
+          "value": 11651467,
+          "count": 1
+        },
+        {
+          "value": 11232681,
+          "count": 1
+        },
+        {
+          "value": 11233455,
+          "count": 1
+        },
+        {
+          "value": 10238251,
+          "count": 1
+        },
+        {
+          "value": 11039125,
+          "count": 1
+        },
+        {
+          "value": 11232733,
+          "count": 1
+        },
+        {
+          "value": 11234996,
+          "count": 1
+        },
+        {
+          "value": 11652803,
+          "count": 1
+        },
+        {
+          "value": 10242142,
+          "count": 1
+        },
+        {
+          "value": 10242825,
+          "count": 1
+        },
+        {
+          "value": 11235960,
+          "count": 1
+        }
+      ],
+      "missingValuesCount": 0,
+      "kurtosis": -1.2611827569987974,
+      "max": 13142449,
+      "mean": 7071242.243789157,
+      "min": 634,
+      "skewness": 0.03201509546826212,
+      "standardDeviation": 3528350.447696126,
+      "sum": 55459307429777,
+      "zerosCount": 0,
+      "variance": 12449256881757.453,
+      "range": 13141815,
+      "percentile5": 1798273.8,
+      "percentile25": 3814349.0,
+      "percentile75": 10206821.0,
+      "percentile95": 12554520.599999998,
+      "median": 7072857.0,
+      "interquartileRange": 6392472.0,
+      "mode": 11646166,
+      "minimumValues": [
+        {
+          "value": 634,
+          "count": 1
+        },
+        {
+          "value": 635,
+          "count": 1
+        },
+        {
+          "value": 636,
+          "count": 1
+        },
+        {
+          "value": 637,
+          "count": 1
+        },
+        {
+          "value": 638,
+          "count": 1
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 13142449,
+          "count": 1
+        },
+        {
+          "value": 13142436,
+          "count": 1
+        },
+        {
+          "value": 13142406,
+          "count": 1
+        },
+        {
+          "value": 13142342,
+          "count": 1
+        },
+        {
+          "value": 13142331,
+          "count": 1
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            634,
+            657724
+          ],
+          "count": 12638
+        },
+        {
+          "bucket": [
+            657724,
+            1314814
+          ],
+          "count": 1545
+        },
+        {
+          "bucket": [
+            1314814,
+            1971904
+          ],
+          "count": 516268
+        },
+        {
+          "bucket": [
+            1971904,
+            2628994
+          ],
+          "count": 526174
+        },
+        {
+          "bucket": [
+            2628994,
+            3286084
+          ],
+          "count": 521471
+        },
+        {
+          "bucket": [
+            3286084,
+            3943175
+          ],
+          "count": 462592
+        },
+        {
+          "bucket": [
+            3943175,
+            4600266
+          ],
+          "count": 380189
+        },
+        {
+          "bucket": [
+            4600266,
+            5257357
+          ],
+          "count": 402556
+        },
+        {
+          "bucket": [
+            5257357,
+            5914448
+          ],
+          "count": 381085
+        },
+        {
+          "bucket": [
+            5914448,
+            6571539
+          ],
+          "count": 400785
+        },
+        {
+          "bucket": [
+            6571539,
+            7228630
+          ],
+          "count": 421546
+        },
+        {
+          "bucket": [
+            7228630,
+            7885721
+          ],
+          "count": 424508
+        },
+        {
+          "bucket": [
+            7885721,
+            8542812
+          ],
+          "count": 419695
+        },
+        {
+          "bucket": [
+            8542812,
+            9199903
+          ],
+          "count": 414025
+        },
+        {
+          "bucket": [
+            9199903,
+            9856994
+          ],
+          "count": 395776
+        },
+        {
+          "bucket": [
+            9856994,
+            10514085
+          ],
+          "count": 384253
+        },
+        {
+          "bucket": [
+            10514085,
+            11171176
+          ],
+          "count": 434025
+        },
+        {
+          "bucket": [
+            11171176,
+            11828267
+          ],
+          "count": 472706
+        },
+        {
+          "bucket": [
+            11828267,
+            12485358
+          ],
+          "count": 433693
+        },
+        {
+          "bucket": [
+            12485358,
+            "inf"
+          ],
+          "count": 437407
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": [],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -1.8177098870598105
+          ],
+          "count": 12638
+        },
+        {
+          "bucket": [
+            -1.8177098870598105,
+            -1.6314781734756185
+          ],
+          "count": 1545
+        },
+        {
+          "bucket": [
+            -1.6314781734756185,
+            -1.4452464598914267
+          ],
+          "count": 516271
+        },
+        {
+          "bucket": [
+            -1.4452464598914267,
+            -1.259014746307235
+          ],
+          "count": 526173
+        },
+        {
+          "bucket": [
+            -1.259014746307235,
+            -1.0727830327230432
+          ],
+          "count": 521473
+        },
+        {
+          "bucket": [
+            -1.0727830327230432,
+            -0.8865513191388512
+          ],
+          "count": 462590
+        },
+        {
+          "bucket": [
+            -0.8865513191388512,
+            -0.7003196055546594
+          ],
+          "count": 380189
+        },
+        {
+          "bucket": [
+            -0.7003196055546594,
+            -0.5140878919704676
+          ],
+          "count": 402555
+        },
+        {
+          "bucket": [
+            -0.5140878919704676,
+            -0.32785617838627573
+          ],
+          "count": 381086
+        },
+        {
+          "bucket": [
+            -0.32785617838627573,
+            -0.1416244648020839
+          ],
+          "count": 400786
+        },
+        {
+          "bucket": [
+            -0.1416244648020839,
+            0.04460724878210794
+          ],
+          "count": 421545
+        },
+        {
+          "bucket": [
+            0.04460724878210794,
+            0.23083896236629978
+          ],
+          "count": 424508
+        },
+        {
+          "bucket": [
+            0.23083896236629978,
+            0.41707067595049163
+          ],
+          "count": 419694
+        },
+        {
+          "bucket": [
+            0.41707067595049163,
+            0.6033023895346835
+          ],
+          "count": 414026
+        },
+        {
+          "bucket": [
+            0.6033023895346835,
+            0.7895341031188753
+          ],
+          "count": 395775
+        },
+        {
+          "bucket": [
+            0.7895341031188753,
+            0.9757658167030672
+          ],
+          "count": 384252
+        },
+        {
+          "bucket": [
+            0.9757658167030672,
+            1.161997530287259
+          ],
+          "count": 434026
+        },
+        {
+          "bucket": [
+            1.161997530287259,
+            1.3482292438714507
+          ],
+          "count": 472705
+        },
+        {
+          "bucket": [
+            1.3482292438714507,
+            1.5344609574556427
+          ],
+          "count": 433694
+        },
+        {
+          "bucket": [
+            1.5344609574556427,
+            "inf"
+          ],
+          "count": 437406
+        }
+      ],
+      "medianAbsoluteDeviation": 3199477.0
+    },
+    {
+      "name": "Case Number",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 7842387,
+      "uniqueValuesCount": 7841930,
+      "entropy": 15.875019633672167,
+      "mostCommonValues": [
+        {
+          "value": "HZ140230",
+          "count": 6
+        },
+        {
+          "value": "HJ590004",
+          "count": 6
+        },
+        {
+          "value": "JE266473",
+          "count": 5
+        },
+        {
+          "value": "JC470284",
+          "count": 5
+        },
+        {
+          "value": "HP296582",
+          "count": 5
+        },
+        {
+          "value": "HS256531",
+          "count": 5
+        },
+        {
+          "value": "HZ403466",
+          "count": 4
+        },
+        {
+          "value": "HZ554936",
+          "count": 4
+        },
+        {
+          "value": "JD286197",
+          "count": 4
+        },
+        {
+          "value": "HJ756295",
+          "count": 4
+        },
+        {
+          "value": "HY346207",
+          "count": 4
+        },
+        {
+          "value": "JA432970",
+          "count": 4
+        },
+        {
+          "value": "HN217726",
+          "count": 4
+        },
+        {
+          "value": "JA206252",
+          "count": 4
+        },
+        {
+          "value": "HJ104730",
+          "count": 4
+        },
+        {
+          "value": "HS496074",
+          "count": 4
+        },
+        {
+          "value": "JF445443",
+          "count": 3
+        },
+        {
+          "value": "HT576362",
+          "count": 3
+        },
+        {
+          "value": "HM646109",
+          "count": 3
+        },
+        {
+          "value": "HJ528074",
+          "count": 3
+        },
+        {
+          "value": "HT572234",
+          "count": 3
+        },
+        {
+          "value": "HK827036",
+          "count": 3
+        },
+        {
+          "value": "G491428",
+          "count": 3
+        },
+        {
+          "value": "JD448026",
+          "count": 3
+        },
+        {
+          "value": "JA451059",
+          "count": 3
+        },
+        {
+          "value": "HH257676",
+          "count": 3
+        },
+        {
+          "value": "HJ117531",
+          "count": 3
+        },
+        {
+          "value": "JB458747",
+          "count": 3
+        },
+        {
+          "value": "HS269432",
+          "count": 3
+        },
+        {
+          "value": "JA185074",
+          "count": 3
+        },
+        {
+          "value": "HM154020",
+          "count": 3
+        },
+        {
+          "value": "HJ309452",
+          "count": 3
+        },
+        {
+          "value": "JD272406",
+          "count": 3
+        },
+        {
+          "value": "HP308521",
+          "count": 3
+        },
+        {
+          "value": "HS313197",
+          "count": 3
+        },
+        {
+          "value": "HM763064",
+          "count": 3
+        },
+        {
+          "value": "HZ260932",
+          "count": 3
+        },
+        {
+          "value": "HS367475",
+          "count": 3
+        },
+        {
+          "value": "HN181190",
+          "count": 3
+        },
+        {
+          "value": "HZ564892",
+          "count": 3
+        },
+        {
+          "value": "HW486725",
+          "count": 3
+        },
+        {
+          "value": "HL112637",
+          "count": 3
+        },
+        {
+          "value": "JF198311",
+          "count": 3
+        },
+        {
+          "value": "JF505994",
+          "count": 3
+        },
+        {
+          "value": "JA389742",
+          "count": 3
+        },
+        {
+          "value": "JB522024",
+          "count": 3
+        },
+        {
+          "value": "JA425377",
+          "count": 3
+        },
+        {
+          "value": "JA329470",
+          "count": 3
+        },
+        {
+          "value": "HP424011",
+          "count": 3
+        },
+        {
+          "value": "HJ808429",
+          "count": 3
+        }
+      ],
+      "missingValuesCount": 4,
+      "max": 9,
+      "mean": 7.938806566370005,
+      "min": 6,
+      "standardDeviation": 0.23974171591432972,
+      "median": 8.0,
+      "mode": 8,
+      "valueDistribution": [
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 18
+        },
+        {
+          "bucket": [
+            7,
+            8
+          ],
+          "count": 479989
+        },
+        {
+          "bucket": [
+            8,
+            9
+          ],
+          "count": 7362837
+        },
+        {
+          "bucket": [
+            9,
+            "inf"
+          ],
+          "count": 89
+        }
+      ],
+      "zScoreOutliersCount": 480096,
+      "zScoreOutliersSample": [
+        {
+          "value": 6,
+          "zScore": -8.087063859436235
+        },
+        {
+          "value": 9,
+          "zScore": 4.4264029294309655
+        },
+        {
+          "value": 7,
+          "zScore": -3.9159082631471684
+        }
+      ]
+    },
+    {
+      "name": "Date",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 3234748,
+      "uniqueValuesCount": 2192566,
+      "entropy": 14.38588590291129,
+      "mostCommonValues": [
+        {
+          "value": "01/01/2008 12:01:00 AM",
+          "count": 304
+        },
+        {
+          "value": "01/01/2007 12:01:00 AM",
+          "count": 259
+        },
+        {
+          "value": "01/01/2006 12:01:00 AM",
+          "count": 226
+        },
+        {
+          "value": "01/01/2004 12:00:00 AM",
+          "count": 218
+        },
+        {
+          "value": "01/01/2005 12:01:00 AM",
+          "count": 215
+        },
+        {
+          "value": "01/01/2003 12:01:00 AM",
+          "count": 213
+        },
+        {
+          "value": "01/01/2003 12:00:00 AM",
+          "count": 210
+        },
+        {
+          "value": "01/01/2007 12:00:00 AM",
+          "count": 205
+        },
+        {
+          "value": "01/01/2009 12:01:00 AM",
+          "count": 198
+        },
+        {
+          "value": "01/01/2015 12:01:00 AM",
+          "count": 198
+        },
+        {
+          "value": "01/01/2012 12:01:00 AM",
+          "count": 197
+        },
+        {
+          "value": "01/01/2001 12:00:00 AM",
+          "count": 193
+        },
+        {
+          "value": "01/01/2005 12:00:00 AM",
+          "count": 190
+        },
+        {
+          "value": "01/01/2006 12:00:00 AM",
+          "count": 181
+        },
+        {
+          "value": "01/01/2015 12:00:00 AM",
+          "count": 178
+        },
+        {
+          "value": "01/01/2004 12:01:00 AM",
+          "count": 174
+        },
+        {
+          "value": "01/01/2002 12:01:00 AM",
+          "count": 174
+        },
+        {
+          "value": "01/01/2017 12:01:00 AM",
+          "count": 172
+        },
+        {
+          "value": "01/01/2016 12:01:00 AM",
+          "count": 172
+        },
+        {
+          "value": "01/01/2010 12:01:00 AM",
+          "count": 171
+        },
+        {
+          "value": "01/01/2009 12:00:00 AM",
+          "count": 170
+        },
+        {
+          "value": "01/01/2008 12:00:00 AM",
+          "count": 169
+        },
+        {
+          "value": "01/01/2002 12:00:00 AM",
+          "count": 166
+        },
+        {
+          "value": "01/01/2013 12:01:00 AM",
+          "count": 161
+        },
+        {
+          "value": "01/01/2011 12:01:00 AM",
+          "count": 160
+        },
+        {
+          "value": "01/01/2014 12:01:00 AM",
+          "count": 159
+        },
+        {
+          "value": "01/01/2017 12:00:00 AM",
+          "count": 156
+        },
+        {
+          "value": "01/01/2010 12:00:00 AM",
+          "count": 156
+        },
+        {
+          "value": "01/01/2012 12:00:00 AM",
+          "count": 145
+        },
+        {
+          "value": "01/01/2016 12:00:00 AM",
+          "count": 144
+        },
+        {
+          "value": "01/01/2014 12:00:00 AM",
+          "count": 143
+        },
+        {
+          "value": "01/01/2001 12:01:00 AM",
+          "count": 142
+        },
+        {
+          "value": "01/01/2011 12:00:00 AM",
+          "count": 140
+        },
+        {
+          "value": "01/01/2018 12:00:00 AM",
+          "count": 137
+        },
+        {
+          "value": "01/01/2021 12:00:00 AM",
+          "count": 133
+        },
+        {
+          "value": "01/01/2013 12:00:00 AM",
+          "count": 128
+        },
+        {
+          "value": "01/01/2018 12:01:00 AM",
+          "count": 127
+        },
+        {
+          "value": "01/01/2008 09:00:00 AM",
+          "count": 126
+        },
+        {
+          "value": "01/01/2009 09:00:00 AM",
+          "count": 122
+        },
+        {
+          "value": "01/01/2019 12:00:00 AM",
+          "count": 108
+        },
+        {
+          "value": "01/01/2022 12:00:00 AM",
+          "count": 107
+        },
+        {
+          "value": "01/01/2020 12:00:00 AM",
+          "count": 107
+        },
+        {
+          "value": "01/01/2013 09:00:00 AM",
+          "count": 107
+        },
+        {
+          "value": "01/01/2003 12:00:00 PM",
+          "count": 106
+        },
+        {
+          "value": "01/01/2006 09:00:00 AM",
+          "count": 106
+        },
+        {
+          "value": "01/01/2007 09:00:00 AM",
+          "count": 99
+        },
+        {
+          "value": "01/01/2001 12:00:00 PM",
+          "count": 99
+        },
+        {
+          "value": "08/01/2022 12:00:00 AM",
+          "count": 98
+        },
+        {
+          "value": "01/01/2005 12:00:00 PM",
+          "count": 98
+        },
+        {
+          "value": "01/01/2005 09:00:00 AM",
+          "count": 95
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 22,
+      "mean": 22.0,
+      "min": 22,
+      "standardDeviation": 0.0,
+      "median": 22.0,
+      "mode": 22,
+      "valueDistribution": [
+        {
+          "bucket": [
+            22.0,
+            22.0
+          ],
+          "count": 7842937
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "Block",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 63068,
+      "uniqueValuesCount": 7030,
+      "entropy": 9.957233564041942,
+      "mostCommonValues": [
+        {
+          "value": "100XX W OHARE ST",
+          "count": 16538
+        },
+        {
+          "value": "001XX N STATE ST",
+          "count": 15448
+        },
+        {
+          "value": "076XX S CICERO AVE",
+          "count": 10138
+        },
+        {
+          "value": "008XX N MICHIGAN AVE",
+          "count": 9438
+        },
+        {
+          "value": "0000X N STATE ST",
+          "count": 9091
+        },
+        {
+          "value": "0000X W TERMINAL ST",
+          "count": 6690
+        },
+        {
+          "value": "064XX S DR MARTIN LUTHER KING JR DR",
+          "count": 6023
+        },
+        {
+          "value": "063XX S DR MARTIN LUTHER KING JR DR",
+          "count": 5639
+        },
+        {
+          "value": "023XX S STATE ST",
+          "count": 5251
+        },
+        {
+          "value": "001XX W 87TH ST",
+          "count": 4648
+        },
+        {
+          "value": "006XX N MICHIGAN AVE",
+          "count": 4443
+        },
+        {
+          "value": "012XX S WABASH AVE",
+          "count": 4427
+        },
+        {
+          "value": "008XX N STATE ST",
+          "count": 4390
+        },
+        {
+          "value": "0000X S STATE ST",
+          "count": 4328
+        },
+        {
+          "value": "057XX S CICERO AVE",
+          "count": 4251
+        },
+        {
+          "value": "009XX W BELMONT AVE",
+          "count": 4155
+        },
+        {
+          "value": "033XX W FILLMORE ST",
+          "count": 4124
+        },
+        {
+          "value": "022XX S STATE ST",
+          "count": 4019
+        },
+        {
+          "value": "075XX S STONY ISLAND AVE",
+          "count": 3852
+        },
+        {
+          "value": "038XX W ROOSEVELT RD",
+          "count": 3848
+        },
+        {
+          "value": "002XX W 87TH ST",
+          "count": 3830
+        },
+        {
+          "value": "071XX S JEFFERY BLVD",
+          "count": 3811
+        },
+        {
+          "value": "007XX N MICHIGAN AVE",
+          "count": 3791
+        },
+        {
+          "value": "0000X W 95TH ST",
+          "count": 3746
+        },
+        {
+          "value": "046XX W NORTH AVE",
+          "count": 3649
+        },
+        {
+          "value": "005XX N MICHIGAN AVE",
+          "count": 3625
+        },
+        {
+          "value": "065XX S DR MARTIN LUTHER KING JR DR",
+          "count": 3616
+        },
+        {
+          "value": "011XX W WILSON AVE",
+          "count": 3613
+        },
+        {
+          "value": "017XX W HOWARD ST",
+          "count": 3526
+        },
+        {
+          "value": "0000X E GRAND AVE",
+          "count": 3425
+        },
+        {
+          "value": "011XX S CANAL ST",
+          "count": 3397
+        },
+        {
+          "value": "066XX S HALSTED ST",
+          "count": 3364
+        },
+        {
+          "value": "029XX S STATE ST",
+          "count": 3358
+        },
+        {
+          "value": "040XX W LAKE ST",
+          "count": 3335
+        },
+        {
+          "value": "009XX N MICHIGAN AVE",
+          "count": 3333
+        },
+        {
+          "value": "085XX S COTTAGE GROVE AVE",
+          "count": 3331
+        },
+        {
+          "value": "026XX N ELSTON AVE",
+          "count": 3319
+        },
+        {
+          "value": "005XX E BROWNING AVE",
+          "count": 3312
+        },
+        {
+          "value": "035XX N CLARK ST",
+          "count": 3216
+        },
+        {
+          "value": "035XX S RHODES AVE",
+          "count": 3212
+        },
+        {
+          "value": "0000X W DIVISION ST",
+          "count": 3197
+        },
+        {
+          "value": "0000X W 79TH ST",
+          "count": 3161
+        },
+        {
+          "value": "051XX W MADISON ST",
+          "count": 3128
+        },
+        {
+          "value": "001XX W LAKE ST",
+          "count": 3107
+        },
+        {
+          "value": "002XX S STATE ST",
+          "count": 3096
+        },
+        {
+          "value": "005XX N STATE ST",
+          "count": 3089
+        },
+        {
+          "value": "021XX E 71ST ST",
+          "count": 3067
+        },
+        {
+          "value": "039XX W MADISON ST",
+          "count": 3032
+        },
+        {
+          "value": "079XX S HALSTED ST",
+          "count": 3031
+        },
+        {
+          "value": "016XX W HOWARD ST",
+          "count": 3026
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 38,
+      "mean": 18.430962406047634,
+      "min": 11,
+      "standardDeviation": 2.7506393389864194,
+      "median": 18.0,
+      "mode": 19,
+      "valueDistribution": [
+        {
+          "bucket": [
+            11,
+            12
+          ],
+          "count": 2
+        },
+        {
+          "bucket": [
+            12,
+            13
+          ],
+          "count": 53
+        },
+        {
+          "bucket": [
+            13,
+            14
+          ],
+          "count": 66538
+        },
+        {
+          "bucket": [
+            14,
+            15
+          ],
+          "count": 67522
+        },
+        {
+          "bucket": [
+            15,
+            16
+          ],
+          "count": 966465
+        },
+        {
+          "bucket": [
+            16,
+            17
+          ],
+          "count": 726698
+        },
+        {
+          "bucket": [
+            17,
+            18
+          ],
+          "count": 992381
+        },
+        {
+          "bucket": [
+            18,
+            19
+          ],
+          "count": 1301562
+        },
+        {
+          "bucket": [
+            19,
+            20
+          ],
+          "count": 1464768
+        },
+        {
+          "bucket": [
+            20,
+            21
+          ],
+          "count": 975957
+        },
+        {
+          "bucket": [
+            21,
+            22
+          ],
+          "count": 632218
+        },
+        {
+          "bucket": [
+            22,
+            23
+          ],
+          "count": 301347
+        },
+        {
+          "bucket": [
+            23,
+            24
+          ],
+          "count": 113824
+        },
+        {
+          "bucket": [
+            24,
+            26
+          ],
+          "count": 156839
+        },
+        {
+          "bucket": [
+            26,
+            28
+          ],
+          "count": 6364
+        },
+        {
+          "bucket": [
+            28,
+            30
+          ],
+          "count": 3043
+        },
+        {
+          "bucket": [
+            30,
+            32
+          ],
+          "count": 61
+        },
+        {
+          "bucket": [
+            32,
+            34
+          ],
+          "count": 1634
+        },
+        {
+          "bucket": [
+            34,
+            36
+          ],
+          "count": 65655
+        },
+        {
+          "bucket": [
+            36,
+            "inf"
+          ],
+          "count": 6
+        }
+      ],
+      "zScoreOutliersCount": 74253,
+      "zScoreOutliersSample": [
+        {
+          "value": 38,
+          "zScore": 7.114359675072248
+        },
+        {
+          "value": 36,
+          "zScore": 6.387255989884288
+        },
+        {
+          "value": 35,
+          "zScore": 6.023704147290308
+        },
+        {
+          "value": 33,
+          "zScore": 5.296600462102348
+        },
+        {
+          "value": 32,
+          "zScore": 4.933048619508368
+        },
+        {
+          "value": 31,
+          "zScore": 4.569496776914388
+        },
+        {
+          "value": 30,
+          "zScore": 4.205944934320408
+        },
+        {
+          "value": 29,
+          "zScore": 3.8423930917264277
+        },
+        {
+          "value": 28,
+          "zScore": 3.478841249132448
+        },
+        {
+          "value": 27,
+          "zScore": 3.115289406538468
+        }
+      ]
+    },
+    {
+      "name": "IUCR",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 404,
+      "uniqueValuesCount": 7,
+      "entropy": 3.924519871866575,
+      "mostCommonValues": [
+        {
+          "value": "0820",
+          "count": 635025
+        },
+        {
+          "value": "0486",
+          "count": 613181
+        },
+        {
+          "value": "0460",
+          "count": 565431
+        },
+        {
+          "value": "1320",
+          "count": 421574
+        },
+        {
+          "value": "0810",
+          "count": 419422
+        },
+        {
+          "value": "1310",
+          "count": 412995
+        },
+        {
+          "value": "0560",
+          "count": 350919
+        },
+        {
+          "value": "0910",
+          "count": 301742
+        },
+        {
+          "value": "0610",
+          "count": 285123
+        },
+        {
+          "value": "1811",
+          "count": 279128
+        },
+        {
+          "value": "0890",
+          "count": 255844
+        },
+        {
+          "value": "0860",
+          "count": 205487
+        },
+        {
+          "value": "2820",
+          "count": 150811
+        },
+        {
+          "value": "1330",
+          "count": 132209
+        },
+        {
+          "value": "2027",
+          "count": 122811
+        },
+        {
+          "value": "0620",
+          "count": 115860
+        },
+        {
+          "value": "2825",
+          "count": 111735
+        },
+        {
+          "value": "031A",
+          "count": 104578
+        },
+        {
+          "value": "2024",
+          "count": 99299
+        },
+        {
+          "value": "0320",
+          "count": 98655
+        },
+        {
+          "value": "0430",
+          "count": 75951
+        },
+        {
+          "value": "143A",
+          "count": 70654
+        },
+        {
+          "value": "1150",
+          "count": 65624
+        },
+        {
+          "value": "051A",
+          "count": 64305
+        },
+        {
+          "value": "1506",
+          "count": 48651
+        },
+        {
+          "value": "1153",
+          "count": 46859
+        },
+        {
+          "value": "041A",
+          "count": 46281
+        },
+        {
+          "value": "0840",
+          "count": 44531
+        },
+        {
+          "value": "1130",
+          "count": 43159
+        },
+        {
+          "value": "5002",
+          "count": 41271
+        },
+        {
+          "value": "4387",
+          "count": 41221
+        },
+        {
+          "value": "0870",
+          "count": 40006
+        },
+        {
+          "value": "1350",
+          "count": 37542
+        },
+        {
+          "value": "1152",
+          "count": 37126
+        },
+        {
+          "value": "1305",
+          "count": 36515
+        },
+        {
+          "value": "0520",
+          "count": 36260
+        },
+        {
+          "value": "2826",
+          "count": 35231
+        },
+        {
+          "value": "1210",
+          "count": 33854
+        },
+        {
+          "value": "0470",
+          "count": 31251
+        },
+        {
+          "value": "0420",
+          "count": 30569
+        },
+        {
+          "value": "1365",
+          "count": 29900
+        },
+        {
+          "value": "0530",
+          "count": 29654
+        },
+        {
+          "value": "2014",
+          "count": 28370
+        },
+        {
+          "value": "2092",
+          "count": 28287
+        },
+        {
+          "value": "0930",
+          "count": 27224
+        },
+        {
+          "value": "2022",
+          "count": 26387
+        },
+        {
+          "value": "2017",
+          "count": 25820
+        },
+        {
+          "value": "0915",
+          "count": 25082
+        },
+        {
+          "value": "502P",
+          "count": 23765
+        },
+        {
+          "value": "0497",
+          "count": 23280
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 4,
+      "mean": 4.0,
+      "min": 4,
+      "standardDeviation": 0.0,
+      "median": 4.0,
+      "mode": 4,
+      "valueDistribution": [
+        {
+          "bucket": [
+            4.0,
+            4.0
+          ],
+          "count": 7842937
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "Primary Type",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 36,
+      "uniqueValuesCount": 1,
+      "entropy": 2.42351134886024,
+      "mostCommonValues": [
+        {
+          "value": "THEFT",
+          "count": 1654618
+        },
+        {
+          "value": "BATTERY",
+          "count": 1433129
+        },
+        {
+          "value": "CRIMINAL DAMAGE",
+          "count": 894068
+        },
+        {
+          "value": "NARCOTICS",
+          "count": 748690
+        },
+        {
+          "value": "ASSAULT",
+          "count": 512441
+        },
+        {
+          "value": "OTHER OFFENSE",
+          "count": 486983
+        },
+        {
+          "value": "BURGLARY",
+          "count": 426001
+        },
+        {
+          "value": "MOTOR VEHICLE THEFT",
+          "count": 381815
+        },
+        {
+          "value": "DECEPTIVE PRACTICE",
+          "count": 348897
+        },
+        {
+          "value": "ROBBERY",
+          "count": 294451
+        },
+        {
+          "value": "CRIMINAL TRESPASS",
+          "count": 215300
+        },
+        {
+          "value": "WEAPONS VIOLATION",
+          "count": 108509
+        },
+        {
+          "value": "PROSTITUTION",
+          "count": 69876
+        },
+        {
+          "value": "OFFENSE INVOLVING CHILDREN",
+          "count": 56202
+        },
+        {
+          "value": "PUBLIC PEACE VIOLATION",
+          "count": 52531
+        },
+        {
+          "value": "SEX OFFENSE",
+          "count": 30999
+        },
+        {
+          "value": "CRIM SEXUAL ASSAULT",
+          "count": 27606
+        },
+        {
+          "value": "INTERFERENCE WITH PUBLIC OFFICER",
+          "count": 18507
+        },
+        {
+          "value": "LIQUOR LAW VIOLATION",
+          "count": 14948
+        },
+        {
+          "value": "GAMBLING",
+          "count": 14620
+        },
+        {
+          "value": "ARSON",
+          "count": 13378
+        },
+        {
+          "value": "HOMICIDE",
+          "count": 12716
+        },
+        {
+          "value": "KIDNAPPING",
+          "count": 7255
+        },
+        {
+          "value": "CRIMINAL SEXUAL ASSAULT",
+          "count": 7115
+        },
+        {
+          "value": "STALKING",
+          "count": 4901
+        },
+        {
+          "value": "INTIMIDATION",
+          "count": 4731
+        },
+        {
+          "value": "CONCEALED CARRY LICENSE VIOLATION",
+          "count": 1118
+        },
+        {
+          "value": "OBSCENITY",
+          "count": 831
+        },
+        {
+          "value": "PUBLIC INDECENCY",
+          "count": 196
+        },
+        {
+          "value": "NON-CRIMINAL",
+          "count": 183
+        },
+        {
+          "value": "OTHER NARCOTIC VIOLATION",
+          "count": 149
+        },
+        {
+          "value": "HUMAN TRAFFICKING",
+          "count": 101
+        },
+        {
+          "value": "NON - CRIMINAL",
+          "count": 38
+        },
+        {
+          "value": "RITUALISM",
+          "count": 24
+        },
+        {
+          "value": "NON-CRIMINAL (SUBJECT SPECIFIED)",
+          "count": 9
+        },
+        {
+          "value": "DOMESTIC VIOLENCE",
+          "count": 1
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 33,
+      "mean": 10.042994735263077,
+      "min": 5,
+      "standardDeviation": 5.013026449599042,
+      "median": 8.0,
+      "mode": 7,
+      "valueDistribution": [
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 1667996
+        },
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            7,
+            8
+          ],
+          "count": 2240021
+        },
+        {
+          "bucket": [
+            8,
+            9
+          ],
+          "count": 458238
+        },
+        {
+          "bucket": [
+            9,
+            10
+          ],
+          "count": 749545
+        },
+        {
+          "bucket": [
+            10,
+            11
+          ],
+          "count": 7255
+        },
+        {
+          "bucket": [
+            11,
+            12
+          ],
+          "count": 30999
+        },
+        {
+          "bucket": [
+            12,
+            13
+          ],
+          "count": 74790
+        },
+        {
+          "bucket": [
+            13,
+            14
+          ],
+          "count": 486983
+        },
+        {
+          "bucket": [
+            14,
+            15
+          ],
+          "count": 38
+        },
+        {
+          "bucket": [
+            15,
+            16
+          ],
+          "count": 894068
+        },
+        {
+          "bucket": [
+            16,
+            17
+          ],
+          "count": 196
+        },
+        {
+          "bucket": [
+            17,
+            19
+          ],
+          "count": 672808
+        },
+        {
+          "bucket": [
+            19,
+            21
+          ],
+          "count": 424369
+        },
+        {
+          "bucket": [
+            21,
+            23
+          ],
+          "count": 52531
+        },
+        {
+          "bucket": [
+            23,
+            25
+          ],
+          "count": 7264
+        },
+        {
+          "bucket": [
+            25,
+            27
+          ],
+          "count": 56202
+        },
+        {
+          "bucket": [
+            27,
+            29
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            29,
+            31
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            31,
+            "inf"
+          ],
+          "count": 19634
+        }
+      ],
+      "zScoreOutliersCount": 75836,
+      "zScoreOutliersSample": [
+        {
+          "value": 33,
+          "zScore": 4.579470205383236
+        },
+        {
+          "value": 32,
+          "zScore": 4.379989909387594
+        },
+        {
+          "value": 26,
+          "zScore": 3.183108133413741
+        }
+      ]
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 546,
+      "uniqueValuesCount": 21,
+      "entropy": 3.857731232645326,
+      "mostCommonValues": [
+        {
+          "value": "SIMPLE",
+          "count": 920254
+        },
+        {
+          "value": "$500 AND UNDER",
+          "count": 635010
+        },
+        {
+          "value": "DOMESTIC BATTERY SIMPLE",
+          "count": 613181
+        },
+        {
+          "value": "TO VEHICLE",
+          "count": 436618
+        },
+        {
+          "value": "OVER $500",
+          "count": 419409
+        },
+        {
+          "value": "TO PROPERTY",
+          "count": 412995
+        },
+        {
+          "value": "AUTOMOBILE",
+          "count": 301742
+        },
+        {
+          "value": "FORCIBLE ENTRY",
+          "count": 285123
+        },
+        {
+          "value": "POSS: CANNABIS 30GMS OR LESS",
+          "count": 278139
+        },
+        {
+          "value": "FROM BUILDING",
+          "count": 255844
+        },
+        {
+          "value": "RETAIL THEFT",
+          "count": 205487
+        },
+        {
+          "value": "TELEPHONE THREAT",
+          "count": 150811
+        },
+        {
+          "value": "TO LAND",
+          "count": 132209
+        },
+        {
+          "value": "POSS: CRACK",
+          "count": 121112
+        },
+        {
+          "value": "UNLAWFUL ENTRY",
+          "count": 115860
+        },
+        {
+          "value": "HARASSMENT BY TELEPHONE",
+          "count": 111735
+        },
+        {
+          "value": "AGGRAVATED: OTHER DANG WEAPON",
+          "count": 96737
+        },
+        {
+          "value": "POSS: HEROIN(WHITE)",
+          "count": 95786
+        },
+        {
+          "value": "ARMED: HANDGUN",
+          "count": 93508
+        },
+        {
+          "value": "STRONGARM - NO WEAPON",
+          "count": 91865
+        },
+        {
+          "value": "AGGRAVATED: HANDGUN",
+          "count": 87420
+        },
+        {
+          "value": "CREDIT CARD FRAUD",
+          "count": 65624
+        },
+        {
+          "value": "AGGRAVATED:KNIFE/CUTTING INSTR",
+          "count": 59672
+        },
+        {
+          "value": "UNLAWFUL POSS OF HANDGUN",
+          "count": 52229
+        },
+        {
+          "value": "SOLICIT ON PUBLIC WAY",
+          "count": 48651
+        },
+        {
+          "value": "FINANCIAL IDENTITY THEFT OVER $ 300",
+          "count": 46859
+        },
+        {
+          "value": "FINANCIAL ID THEFT: OVER $300",
+          "count": 44527
+        },
+        {
+          "value": "FRAUD OR CONFIDENCE GAME",
+          "count": 43159
+        },
+        {
+          "value": "OTHER VEHICLE OFFENSE",
+          "count": 41271
+        },
+        {
+          "value": "VIOLATE ORDER OF PROTECTION",
+          "count": 41221
+        },
+        {
+          "value": "POCKET-PICKING",
+          "count": 40006
+        },
+        {
+          "value": "TO STATE SUP LAND",
+          "count": 37542
+        },
+        {
+          "value": "ILLEGAL USE CASH CARD",
+          "count": 37126
+        },
+        {
+          "value": "CRIMINAL DEFACEMENT",
+          "count": 36515
+        },
+        {
+          "value": "HARASSMENT BY ELECTRONIC MEANS",
+          "count": 35231
+        },
+        {
+          "value": "THEFT OF LABOR/SERVICES",
+          "count": 32353
+        },
+        {
+          "value": "RECKLESS CONDUCT",
+          "count": 31251
+        },
+        {
+          "value": "PRO EMP HANDS NO/MIN INJURY",
+          "count": 31192
+        },
+        {
+          "value": "TO RESIDENCE",
+          "count": 29900
+        },
+        {
+          "value": "SOLICIT NARCOTICS ON PUBLICWAY",
+          "count": 27854
+        },
+        {
+          "value": "MANU/DELIVER: HEROIN (WHITE)",
+          "count": 26446
+        },
+        {
+          "value": "POSS: COCAINE",
+          "count": 25470
+        },
+        {
+          "value": "AGGRAVATED - HANDGUN",
+          "count": 25118
+        },
+        {
+          "value": "TRUCK, BUS, MOTOR HOME",
+          "count": 25082
+        },
+        {
+          "value": "MANU/DELIVER:CRACK",
+          "count": 24949
+        },
+        {
+          "value": "THEFT/RECOVERY: AUTOMOBILE",
+          "count": 23322
+        },
+        {
+          "value": "FINANCIAL IDENTITY THEFT $300 AND UNDER",
+          "count": 22236
+        },
+        {
+          "value": "FALSE/STOLEN/ALTERED TRP",
+          "count": 21866
+        },
+        {
+          "value": "FORGERY",
+          "count": 21776
+        },
+        {
+          "value": "ATTEMPT POSSESSION NARCOTICS",
+          "count": 21371
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 60,
+      "mean": 16.198758067290353,
+      "min": 5,
+      "standardDeviation": 8.166172482207918,
+      "median": 14.0,
+      "mode": 14,
+      "valueDistribution": [
+        {
+          "bucket": [
+            5,
+            7
+          ],
+          "count": 922693
+        },
+        {
+          "bucket": [
+            7,
+            9
+          ],
+          "count": 163631
+        },
+        {
+          "bucket": [
+            9,
+            11
+          ],
+          "count": 1198992
+        },
+        {
+          "bucket": [
+            11,
+            13
+          ],
+          "count": 820904
+        },
+        {
+          "bucket": [
+            13,
+            15
+          ],
+          "count": 1511030
+        },
+        {
+          "bucket": [
+            15,
+            18
+          ],
+          "count": 388387
+        },
+        {
+          "bucket": [
+            18,
+            21
+          ],
+          "count": 338675
+        },
+        {
+          "bucket": [
+            21,
+            24
+          ],
+          "count": 1119074
+        },
+        {
+          "bucket": [
+            24,
+            27
+          ],
+          "count": 249312
+        },
+        {
+          "bucket": [
+            27,
+            30
+          ],
+          "count": 681813
+        },
+        {
+          "bucket": [
+            30,
+            33
+          ],
+          "count": 271814
+        },
+        {
+          "bucket": [
+            33,
+            36
+          ],
+          "count": 73738
+        },
+        {
+          "bucket": [
+            36,
+            39
+          ],
+          "count": 10566
+        },
+        {
+          "bucket": [
+            39,
+            42
+          ],
+          "count": 32388
+        },
+        {
+          "bucket": [
+            42,
+            45
+          ],
+          "count": 1537
+        },
+        {
+          "bucket": [
+            45,
+            48
+          ],
+          "count": 35078
+        },
+        {
+          "bucket": [
+            48,
+            51
+          ],
+          "count": 3409
+        },
+        {
+          "bucket": [
+            51,
+            54
+          ],
+          "count": 5793
+        },
+        {
+          "bucket": [
+            54,
+            57
+          ],
+          "count": 4246
+        },
+        {
+          "bucket": [
+            57,
+            "inf"
+          ],
+          "count": 9857
+        }
+      ],
+      "zScoreOutliersCount": 59936,
+      "zScoreOutliersSample": [
+        {
+          "value": 60,
+          "zScore": 5.36374195232121
+        },
+        {
+          "value": 59,
+          "zScore": 5.241285562601455
+        },
+        {
+          "value": 58,
+          "zScore": 5.118829172881699
+        },
+        {
+          "value": 57,
+          "zScore": 4.996372783161942
+        },
+        {
+          "value": 56,
+          "zScore": 4.873916393442187
+        },
+        {
+          "value": 55,
+          "zScore": 4.751460003722431
+        },
+        {
+          "value": 54,
+          "zScore": 4.6290036140026745
+        },
+        {
+          "value": 53,
+          "zScore": 4.506547224282919
+        },
+        {
+          "value": 52,
+          "zScore": 4.384090834563163
+        },
+        {
+          "value": 51,
+          "zScore": 4.2616344448434065
+        },
+        {
+          "value": 50,
+          "zScore": 4.139178055123651
+        },
+        {
+          "value": 49,
+          "zScore": 4.016721665403895
+        },
+        {
+          "value": 48,
+          "zScore": 3.8942652756841394
+        },
+        {
+          "value": 47,
+          "zScore": 3.7718088859643832
+        },
+        {
+          "value": 46,
+          "zScore": 3.649352496244627
+        },
+        {
+          "value": 45,
+          "zScore": 3.5268961065248714
+        },
+        {
+          "value": 44,
+          "zScore": 3.4044397168051153
+        },
+        {
+          "value": 43,
+          "zScore": 3.281983327085359
+        },
+        {
+          "value": 42,
+          "zScore": 3.159526937365603
+        },
+        {
+          "value": 41,
+          "zScore": 3.0370705476458473
+        }
+      ]
+    },
+    {
+      "name": "Location Description",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 217,
+      "uniqueValuesCount": 12,
+      "entropy": 2.831977362518656,
+      "mostCommonValues": [
+        {
+          "value": "STREET",
+          "count": 2044066
+        },
+        {
+          "value": "RESIDENCE",
+          "count": 1313014
+        },
+        {
+          "value": "APARTMENT",
+          "count": 890253
+        },
+        {
+          "value": "SIDEWALK",
+          "count": 731893
+        },
+        {
+          "value": "OTHER",
+          "count": 270017
+        },
+        {
+          "value": "PARKING LOT/GARAGE(NON.RESID.)",
+          "count": 202985
+        },
+        {
+          "value": "ALLEY",
+          "count": 174299
+        },
+        {
+          "value": "SMALL RETAIL STORE",
+          "count": 148772
+        },
+        {
+          "value": "SCHOOL, PUBLIC, BUILDING",
+          "count": 146387
+        },
+        {
+          "value": "RESIDENCE-GARAGE",
+          "count": 135543
+        },
+        {
+          "value": "RESTAURANT",
+          "count": 128380
+        },
+        {
+          "value": "VEHICLE NON-COMMERCIAL",
+          "count": 124850
+        },
+        {
+          "value": "RESIDENCE PORCH/HALLWAY",
+          "count": 124208
+        },
+        {
+          "value": "DEPARTMENT STORE",
+          "count": 99384
+        },
+        {
+          "value": "GROCERY FOOD STORE",
+          "count": 99221
+        },
+        {
+          "value": "GAS STATION",
+          "count": 87139
+        },
+        {
+          "value": "RESIDENTIAL YARD (FRONT/BACK)",
+          "count": 75149
+        },
+        {
+          "value": "COMMERCIAL / BUSINESS OFFICE",
+          "count": 61127
+        },
+        {
+          "value": "PARK PROPERTY",
+          "count": 59150
+        },
+        {
+          "value": "CHA PARKING LOT/GROUNDS",
+          "count": 56107
+        },
+        {
+          "value": "BAR OR TAVERN",
+          "count": 42975
+        },
+        {
+          "value": "CTA PLATFORM",
+          "count": 39640
+        },
+        {
+          "value": "CHA APARTMENT",
+          "count": 39071
+        },
+        {
+          "value": "DRUG STORE",
+          "count": 36040
+        },
+        {
+          "value": "BANK",
+          "count": 31360
+        },
+        {
+          "value": "CTA TRAIN",
+          "count": 30940
+        },
+        {
+          "value": "SCHOOL, PUBLIC, GROUNDS",
+          "count": 30253
+        },
+        {
+          "value": "HOTEL/MOTEL",
+          "count": 29748
+        },
+        {
+          "value": "PARKING LOT / GARAGE (NON RESIDENTIAL)",
+          "count": 25902
+        },
+        {
+          "value": "CTA BUS",
+          "count": 25296
+        },
+        {
+          "value": "CHA HALLWAY/STAIRWELL/ELEVATOR",
+          "count": 25022
+        },
+        {
+          "value": "VACANT LOT/LAND",
+          "count": 24686
+        },
+        {
+          "value": "CONVENIENCE STORE",
+          "count": 23844
+        },
+        {
+          "value": "DRIVEWAY - RESIDENTIAL",
+          "count": 22971
+        },
+        {
+          "value": "TAVERN/LIQUOR STORE",
+          "count": 22465
+        },
+        {
+          "value": "HOSPITAL BUILDING/GROUNDS",
+          "count": 22199
+        },
+        {
+          "value": "POLICE FACILITY/VEH PARKING LOT",
+          "count": 18570
+        },
+        {
+          "value": "AIRPORT/AIRCRAFT",
+          "count": 16273
+        },
+        {
+          "value": "CHURCH/SYNAGOGUE/PLACE OF WORSHIP",
+          "count": 15493
+        },
+        {
+          "value": "GOVERNMENT BUILDING/PROPERTY",
+          "count": 14756
+        },
+        {
+          "value": "NURSING HOME/RETIREMENT HOME",
+          "count": 14658
+        },
+        {
+          "value": "SCHOOL, PRIVATE, BUILDING",
+          "count": 14186
+        },
+        {
+          "value": "CONSTRUCTION SITE",
+          "count": 13971
+        },
+        {
+          "value": "OTHER (SPECIFY)",
+          "count": 13904
+        },
+        {
+          "value": "CURRENCY EXCHANGE",
+          "count": 11938
+        },
+        {
+          "value": "ABANDONED BUILDING",
+          "count": 11876
+        },
+        {
+          "value": "RESIDENCE - PORCH / HALLWAY",
+          "count": 11107
+        },
+        {
+          "value": "CTA GARAGE / OTHER PROPERTY",
+          "count": 10277
+        },
+        {
+          "value": "WAREHOUSE",
+          "count": 10220
+        },
+        {
+          "value": "RESIDENCE - YARD (FRONT / BACK)",
+          "count": 9652
+        }
+      ],
+      "missingValuesCount": 10730,
+      "max": 53,
+      "mean": 11.212418287718902,
+      "min": 4,
+      "standardDeviation": 7.184502261369531,
+      "median": 9.0,
+      "mode": 9,
+      "valueDistribution": [
+        {
+          "bucket": [
+            4,
+            6
+          ],
+          "count": 478454
+        },
+        {
+          "bucket": [
+            6,
+            8
+          ],
+          "count": 2084631
+        },
+        {
+          "bucket": [
+            8,
+            10
+          ],
+          "count": 2983020
+        },
+        {
+          "bucket": [
+            10,
+            12
+          ],
+          "count": 297036
+        },
+        {
+          "bucket": [
+            12,
+            14
+          ],
+          "count": 205060
+        },
+        {
+          "bucket": [
+            14,
+            16
+          ],
+          "count": 52542
+        },
+        {
+          "bucket": [
+            16,
+            18
+          ],
+          "count": 304664
+        },
+        {
+          "bucket": [
+            18,
+            20
+          ],
+          "count": 302056
+        },
+        {
+          "bucket": [
+            20,
+            22
+          ],
+          "count": 16456
+        },
+        {
+          "bucket": [
+            22,
+            24
+          ],
+          "count": 364370
+        },
+        {
+          "bucket": [
+            24,
+            26
+          ],
+          "count": 197414
+        },
+        {
+          "bucket": [
+            26,
+            29
+          ],
+          "count": 123503
+        },
+        {
+          "bucket": [
+            29,
+            32
+          ],
+          "count": 354409
+        },
+        {
+          "bucket": [
+            32,
+            35
+          ],
+          "count": 25137
+        },
+        {
+          "bucket": [
+            35,
+            38
+          ],
+          "count": 4618
+        },
+        {
+          "bucket": [
+            38,
+            41
+          ],
+          "count": 25902
+        },
+        {
+          "bucket": [
+            41,
+            44
+          ],
+          "count": 7161
+        },
+        {
+          "bucket": [
+            44,
+            47
+          ],
+          "count": 3629
+        },
+        {
+          "bucket": [
+            47,
+            50
+          ],
+          "count": 1318
+        },
+        {
+          "bucket": [
+            50,
+            "inf"
+          ],
+          "count": 827
+        }
+      ],
+      "zScoreOutliersCount": 68126,
+      "zScoreOutliersSample": [
+        {
+          "value": 53,
+          "zScore": 5.816350276200683
+        },
+        {
+          "value": 47,
+          "zScore": 4.9812193538733975
+        },
+        {
+          "value": 46,
+          "zScore": 4.84203086681885
+        },
+        {
+          "value": 44,
+          "zScore": 4.5636538927097545
+        },
+        {
+          "value": 43,
+          "zScore": 4.424465405655208
+        },
+        {
+          "value": 42,
+          "zScore": 4.28527691860066
+        },
+        {
+          "value": 41,
+          "zScore": 4.146088431546112
+        },
+        {
+          "value": 38,
+          "zScore": 3.7285229703824703
+        },
+        {
+          "value": 37,
+          "zScore": 3.5893344833279226
+        },
+        {
+          "value": 35,
+          "zScore": 3.3109575092188277
+        },
+        {
+          "value": 34,
+          "zScore": 3.17176902216428
+        },
+        {
+          "value": 33,
+          "zScore": 3.032580535109733
+        }
+      ]
+    },
+    {
+      "name": "Arrest",
+      "type": "boolean",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 2,
+      "uniqueValuesCount": 0,
+      "entropy": 0.5734138146719224,
+      "mostCommonValues": [
+        {
+          "value": false,
+          "count": 5801095
+        },
+        {
+          "value": true,
+          "count": 2041842
+        }
+      ],
+      "missingValuesCount": 0
+    },
+    {
+      "name": "Domestic",
+      "type": "boolean",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 2,
+      "uniqueValuesCount": 0,
+      "entropy": 0.4023211782647582,
+      "mostCommonValues": [
+        {
+          "value": false,
+          "count": 6756304
+        },
+        {
+          "value": true,
+          "count": 1086633
+        }
+      ],
+      "missingValuesCount": 0
+    },
+    {
+      "name": "Beat",
+      "type": "int",
+      "correlations": {
+        "ID": -0.038560108087839405,
+        "Beat": 1.0,
+        "District": 0.9468772357263897,
+        "Ward": 0.6424718411573525,
+        "Community Area": -0.4993413169359275,
+        "X Coordinate": -0.4918760043998917,
+        "Y Coordinate": 0.6209744017500095,
+        "Year": -0.0397765192076091,
+        "Latitude": 0.6213519083163442,
+        "Longitude": -0.4884598700069606
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 305,
+      "uniqueValuesCount": 0,
+      "entropy": 5.614537903326192,
+      "mostCommonValues": [
+        {
+          "value": 421,
+          "count": 61092
+        },
+        {
+          "value": 423,
+          "count": 60524
+        },
+        {
+          "value": 1834,
+          "count": 56164
+        },
+        {
+          "value": 624,
+          "count": 55141
+        },
+        {
+          "value": 511,
+          "count": 53787
+        },
+        {
+          "value": 1533,
+          "count": 52881
+        },
+        {
+          "value": 1112,
+          "count": 52711
+        },
+        {
+          "value": 823,
+          "count": 51892
+        },
+        {
+          "value": 414,
+          "count": 49330
+        },
+        {
+          "value": 1522,
+          "count": 48738
+        },
+        {
+          "value": 2533,
+          "count": 47795
+        },
+        {
+          "value": 621,
+          "count": 47622
+        },
+        {
+          "value": 612,
+          "count": 46886
+        },
+        {
+          "value": 321,
+          "count": 45534
+        },
+        {
+          "value": 631,
+          "count": 44965
+        },
+        {
+          "value": 825,
+          "count": 44584
+        },
+        {
+          "value": 512,
+          "count": 43758
+        },
+        {
+          "value": 522,
+          "count": 43500
+        },
+        {
+          "value": 1011,
+          "count": 43441
+        },
+        {
+          "value": 713,
+          "count": 43332
+        },
+        {
+          "value": 1532,
+          "count": 42725
+        },
+        {
+          "value": 1121,
+          "count": 42357
+        },
+        {
+          "value": 1122,
+          "count": 42248
+        },
+        {
+          "value": 1831,
+          "count": 41881
+        },
+        {
+          "value": 831,
+          "count": 41723
+        },
+        {
+          "value": 1531,
+          "count": 41553
+        },
+        {
+          "value": 632,
+          "count": 41417
+        },
+        {
+          "value": 623,
+          "count": 41124
+        },
+        {
+          "value": 122,
+          "count": 41082
+        },
+        {
+          "value": 324,
+          "count": 40399
+        },
+        {
+          "value": 832,
+          "count": 40383
+        },
+        {
+          "value": 712,
+          "count": 40269
+        },
+        {
+          "value": 513,
+          "count": 40040
+        },
+        {
+          "value": 312,
+          "count": 40023
+        },
+        {
+          "value": 1132,
+          "count": 39703
+        },
+        {
+          "value": 1133,
+          "count": 39601
+        },
+        {
+          "value": 813,
+          "count": 39370
+        },
+        {
+          "value": 2534,
+          "count": 39018
+        },
+        {
+          "value": 523,
+          "count": 38965
+        },
+        {
+          "value": 833,
+          "count": 38936
+        },
+        {
+          "value": 611,
+          "count": 38187
+        },
+        {
+          "value": 1523,
+          "count": 37558
+        },
+        {
+          "value": 725,
+          "count": 37137
+        },
+        {
+          "value": 2512,
+          "count": 36968
+        },
+        {
+          "value": 331,
+          "count": 36867
+        },
+        {
+          "value": 834,
+          "count": 36823
+        },
+        {
+          "value": 835,
+          "count": 36800
+        },
+        {
+          "value": 323,
+          "count": 36707
+        },
+        {
+          "value": 424,
+          "count": 36104
+        },
+        {
+          "value": 412,
+          "count": 36099
+        }
+      ],
+      "missingValuesCount": 0,
+      "kurtosis": -0.9587294213546307,
+      "max": 2535,
+      "mean": 1185.6919648850935,
+      "min": 111,
+      "skewness": 0.38761401531085954,
+      "standardDeviation": 703.2076098539192,
+      "sum": 9299307382,
+      "zerosCount": 0,
+      "variance": 494500.9425564618,
+      "range": 2424,
+      "percentile5": 214.0,
+      "percentile25": 621.0,
+      "percentile75": 1731.0,
+      "percentile95": 2512.0,
+      "median": 1034.0,
+      "interquartileRange": 1110.0,
+      "mode": 421,
+      "minimumValues": [
+        {
+          "value": 111,
+          "count": 33302
+        },
+        {
+          "value": 112,
+          "count": 28791
+        },
+        {
+          "value": 113,
+          "count": 23083
+        },
+        {
+          "value": 114,
+          "count": 11431
+        },
+        {
+          "value": 121,
+          "count": 8282
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 2535,
+          "count": 34290
+        },
+        {
+          "value": 2534,
+          "count": 39018
+        },
+        {
+          "value": 2533,
+          "count": 47795
+        },
+        {
+          "value": 2532,
+          "count": 34767
+        },
+        {
+          "value": 2531,
+          "count": 27739
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            111,
+            232
+          ],
+          "count": 509309
+        },
+        {
+          "bucket": [
+            232,
+            353
+          ],
+          "count": 472929
+        },
+        {
+          "bucket": [
+            353,
+            474
+          ],
+          "count": 445301
+        },
+        {
+          "bucket": [
+            474,
+            595
+          ],
+          "count": 347408
+        },
+        {
+          "bucket": [
+            595,
+            716
+          ],
+          "count": 621585
+        },
+        {
+          "bucket": [
+            716,
+            837
+          ],
+          "count": 816559
+        },
+        {
+          "bucket": [
+            837,
+            958
+          ],
+          "count": 375080
+        },
+        {
+          "bucket": [
+            958,
+            1079
+          ],
+          "count": 338000
+        },
+        {
+          "bucket": [
+            1079,
+            1200
+          ],
+          "count": 503097
+        },
+        {
+          "bucket": [
+            1200,
+            1321
+          ],
+          "count": 306288
+        },
+        {
+          "bucket": [
+            1321,
+            1442
+          ],
+          "count": 385898
+        },
+        {
+          "bucket": [
+            1442,
+            1563
+          ],
+          "count": 335771
+        },
+        {
+          "bucket": [
+            1563,
+            1684
+          ],
+          "count": 262788
+        },
+        {
+          "bucket": [
+            1684,
+            1805
+          ],
+          "count": 226462
+        },
+        {
+          "bucket": [
+            1805,
+            1926
+          ],
+          "count": 522349
+        },
+        {
+          "bucket": [
+            1926,
+            2047
+          ],
+          "count": 224729
+        },
+        {
+          "bucket": [
+            2047,
+            2169
+          ],
+          "count": 112992
+        },
+        {
+          "bucket": [
+            2169,
+            2291
+          ],
+          "count": 256970
+        },
+        {
+          "bucket": [
+            2291,
+            2413
+          ],
+          "count": 148627
+        },
+        {
+          "bucket": [
+            2413,
+            "inf"
+          ],
+          "count": 630795
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": [],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -1.355918154928908
+          ],
+          "count": 531909
+        },
+        {
+          "bucket": [
+            -1.355918154928908,
+            -1.1835650712852634
+          ],
+          "count": 450329
+        },
+        {
+          "bucket": [
+            -1.1835650712852634,
+            -1.0112119876416188
+          ],
+          "count": 445301
+        },
+        {
+          "bucket": [
+            -1.0112119876416188,
+            -0.838858903997974
+          ],
+          "count": 347408
+        },
+        {
+          "bucket": [
+            -0.838858903997974,
+            -0.6665058203543293
+          ],
+          "count": 621585
+        },
+        {
+          "bucket": [
+            -0.6665058203543293,
+            -0.4941527367106846
+          ],
+          "count": 816559
+        },
+        {
+          "bucket": [
+            -0.4941527367106846,
+            -0.3217996530670399
+          ],
+          "count": 375080
+        },
+        {
+          "bucket": [
+            -0.3217996530670399,
+            -0.1494465694233952
+          ],
+          "count": 338000
+        },
+        {
+          "bucket": [
+            -0.1494465694233952,
+            0.0229065142202495
+          ],
+          "count": 503097
+        },
+        {
+          "bucket": [
+            0.0229065142202495,
+            0.1952595978638942
+          ],
+          "count": 316582
+        },
+        {
+          "bucket": [
+            0.1952595978638942,
+            0.3676126815075389
+          ],
+          "count": 375604
+        },
+        {
+          "bucket": [
+            0.3676126815075389,
+            0.5399657651511836
+          ],
+          "count": 335771
+        },
+        {
+          "bucket": [
+            0.5399657651511836,
+            0.7123188487948283
+          ],
+          "count": 262788
+        },
+        {
+          "bucket": [
+            0.7123188487948283,
+            0.884671932438473
+          ],
+          "count": 226462
+        },
+        {
+          "bucket": [
+            0.884671932438473,
+            1.0570250160821177
+          ],
+          "count": 522349
+        },
+        {
+          "bucket": [
+            1.0570250160821177,
+            1.2293780997257624
+          ],
+          "count": 224729
+        },
+        {
+          "bucket": [
+            1.2293780997257624,
+            1.401731183369407
+          ],
+          "count": 112992
+        },
+        {
+          "bucket": [
+            1.401731183369407,
+            1.5740842670130517
+          ],
+          "count": 256970
+        },
+        {
+          "bucket": [
+            1.5740842670130517,
+            1.7464373506566966
+          ],
+          "count": 183248
+        },
+        {
+          "bucket": [
+            1.7464373506566966,
+            "inf"
+          ],
+          "count": 596174
+        }
+      ],
+      "medianAbsoluteDeviation": 521.0
+    },
+    {
+      "name": "District",
+      "type": "int",
+      "correlations": {
+        "ID": -0.004160084556029841,
+        "Beat": 0.9468772357263897,
+        "District": 1.0,
+        "Ward": 0.6851546220244291,
+        "Community Area": -0.49397223086208947,
+        "X Coordinate": -0.5397877329082866,
+        "Y Coordinate": 0.6281568011005675,
+        "Year": -0.005296558589938074,
+        "Latitude": 0.6287078217589745,
+        "Longitude": -0.5368584692566015
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 24,
+      "uniqueValuesCount": 0,
+      "entropy": 3.054762998230579,
+      "mostCommonValues": [
+        {
+          "value": 8,
+          "count": 526835
+        },
+        {
+          "value": 11,
+          "count": 503097
+        },
+        {
+          "value": 6,
+          "count": 458657
+        },
+        {
+          "value": 7,
+          "count": 452916
+        },
+        {
+          "value": 25,
+          "count": 446023
+        },
+        {
+          "value": 4,
+          "count": 445250
+        },
+        {
+          "value": 3,
+          "count": 397741
+        },
+        {
+          "value": 12,
+          "count": 389071
+        },
+        {
+          "value": 9,
+          "count": 383014
+        },
+        {
+          "value": 2,
+          "count": 371546
+        },
+        {
+          "value": 19,
+          "count": 352484
+        },
+        {
+          "value": 18,
+          "count": 352073
+        },
+        {
+          "value": 5,
+          "count": 347337
+        },
+        {
+          "value": 10,
+          "count": 337946
+        },
+        {
+          "value": 15,
+          "count": 335721
+        },
+        {
+          "value": 1,
+          "count": 317693
+        },
+        {
+          "value": 14,
+          "count": 303280
+        },
+        {
+          "value": 16,
+          "count": 262670
+        },
+        {
+          "value": 22,
+          "count": 256999
+        },
+        {
+          "value": 24,
+          "count": 237145
+        },
+        {
+          "value": 17,
+          "count": 226345
+        },
+        {
+          "value": 20,
+          "count": 138798
+        },
+        {
+          "value": 31,
+          "count": 245
+        },
+        {
+          "value": 21,
+          "count": 4
+        }
+      ],
+      "missingValuesCount": 47,
+      "kurtosis": -0.865286813978714,
+      "max": 31,
+      "mean": 11.294909657026938,
+      "min": 1,
+      "skewness": 0.43362991134104223,
+      "standardDeviation": 6.953709052596187,
+      "sum": 88584734,
+      "zerosCount": 0,
+      "variance": 48.35406958815816,
+      "range": 30,
+      "percentile5": 2.0,
+      "percentile25": 6.0,
+      "percentile75": 17.0,
+      "percentile95": 25.0,
+      "median": 10.0,
+      "interquartileRange": 11.0,
+      "mode": 8,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 47
+        },
+        {
+          "value": 1,
+          "count": 317693
+        },
+        {
+          "value": 2,
+          "count": 371546
+        },
+        {
+          "value": 3,
+          "count": 397741
+        },
+        {
+          "value": 4,
+          "count": 445250
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 31,
+          "count": 245
+        },
+        {
+          "value": 25,
+          "count": 446023
+        },
+        {
+          "value": 24,
+          "count": 237145
+        },
+        {
+          "value": 22,
+          "count": 256999
+        },
+        {
+          "value": 21,
+          "count": 4
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            1,
+            2
+          ],
+          "count": 317693
+        },
+        {
+          "bucket": [
+            2,
+            3
+          ],
+          "count": 371546
+        },
+        {
+          "bucket": [
+            3,
+            4
+          ],
+          "count": 397741
+        },
+        {
+          "bucket": [
+            4,
+            5
+          ],
+          "count": 445250
+        },
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 347337
+        },
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 458657
+        },
+        {
+          "bucket": [
+            7,
+            8
+          ],
+          "count": 452916
+        },
+        {
+          "bucket": [
+            8,
+            9
+          ],
+          "count": 526835
+        },
+        {
+          "bucket": [
+            9,
+            10
+          ],
+          "count": 383014
+        },
+        {
+          "bucket": [
+            10,
+            11
+          ],
+          "count": 337946
+        },
+        {
+          "bucket": [
+            11,
+            13
+          ],
+          "count": 892168
+        },
+        {
+          "bucket": [
+            13,
+            15
+          ],
+          "count": 303280
+        },
+        {
+          "bucket": [
+            15,
+            17
+          ],
+          "count": 598391
+        },
+        {
+          "bucket": [
+            17,
+            19
+          ],
+          "count": 578418
+        },
+        {
+          "bucket": [
+            19,
+            21
+          ],
+          "count": 491282
+        },
+        {
+          "bucket": [
+            21,
+            23
+          ],
+          "count": 257003
+        },
+        {
+          "bucket": [
+            23,
+            25
+          ],
+          "count": 237145
+        },
+        {
+          "bucket": [
+            25,
+            27
+          ],
+          "count": 446023
+        },
+        {
+          "bucket": [
+            27,
+            29
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            29,
+            "inf"
+          ],
+          "count": 245
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": [],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -1.2647796435692595
+          ],
+          "count": 689239
+        },
+        {
+          "bucket": [
+            -1.2647796435692595,
+            -1.049067426009629
+          ],
+          "count": 397741
+        },
+        {
+          "bucket": [
+            -1.049067426009629,
+            -0.8333552084499988
+          ],
+          "count": 792587
+        },
+        {
+          "bucket": [
+            -0.8333552084499988,
+            -0.6176429908903684
+          ],
+          "count": 458657
+        },
+        {
+          "bucket": [
+            -0.6176429908903684,
+            -0.401930773330738
+          ],
+          "count": 979751
+        },
+        {
+          "bucket": [
+            -0.401930773330738,
+            -0.1862185557711076
+          ],
+          "count": 383014
+        },
+        {
+          "bucket": [
+            -0.1862185557711076,
+            0.0294936617885228
+          ],
+          "count": 841043
+        },
+        {
+          "bucket": [
+            0.0294936617885228,
+            0.2452058793481532
+          ],
+          "count": 389071
+        },
+        {
+          "bucket": [
+            0.2452058793481532,
+            0.4609180969077836
+          ],
+          "count": 303280
+        },
+        {
+          "bucket": [
+            0.4609180969077836,
+            0.676630314467414
+          ],
+          "count": 335721
+        },
+        {
+          "bucket": [
+            0.676630314467414,
+            0.8923425320270444
+          ],
+          "count": 489015
+        },
+        {
+          "bucket": [
+            0.8923425320270444,
+            1.1080547495866748
+          ],
+          "count": 352073
+        },
+        {
+          "bucket": [
+            1.1080547495866748,
+            1.3237669671463053
+          ],
+          "count": 491282
+        },
+        {
+          "bucket": [
+            1.3237669671463053,
+            1.5394791847059357
+          ],
+          "count": 4
+        },
+        {
+          "bucket": [
+            1.5394791847059357,
+            1.755191402265566
+          ],
+          "count": 256999
+        },
+        {
+          "bucket": [
+            1.755191402265566,
+            1.9709036198251964
+          ],
+          "count": 237145
+        },
+        {
+          "bucket": [
+            1.9709036198251964,
+            2.186615837384827
+          ],
+          "count": 446023
+        },
+        {
+          "bucket": [
+            2.186615837384827,
+            2.4023280549444572
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            2.4023280549444572,
+            2.6180402725040874
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            2.6180402725040874,
+            "inf"
+          ],
+          "count": 245
+        }
+      ],
+      "medianAbsoluteDeviation": 5.0
+    },
+    {
+      "name": "Ward",
+      "type": "int",
+      "correlations": {
+        "ID": 0.02199465785427574,
+        "Beat": 0.6424718411573525,
+        "District": 0.6851546220244291,
+        "Ward": 1.0,
+        "Community Area": -0.529362424525195,
+        "X Coordinate": -0.4464098813561223,
+        "Y Coordinate": 0.6368997940251931,
+        "Year": 0.02122088255442136,
+        "Latitude": 0.6370368057427842,
+        "Longitude": -0.44226462794350685
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 50,
+      "uniqueValuesCount": 0,
+      "entropy": 3.796042919221204,
+      "mostCommonValues": [
+        {
+          "value": 28,
+          "count": 331559
+        },
+        {
+          "value": 42,
+          "count": 300333
+        },
+        {
+          "value": 24,
+          "count": 283895
+        },
+        {
+          "value": 27,
+          "count": 272448
+        },
+        {
+          "value": 2,
+          "count": 255860
+        },
+        {
+          "value": 6,
+          "count": 239406
+        },
+        {
+          "value": 17,
+          "count": 239035
+        },
+        {
+          "value": 20,
+          "count": 237208
+        },
+        {
+          "value": 3,
+          "count": 220218
+        },
+        {
+          "value": 21,
+          "count": 219017
+        },
+        {
+          "value": 16,
+          "count": 207823
+        },
+        {
+          "value": 34,
+          "count": 202396
+        },
+        {
+          "value": 8,
+          "count": 199824
+        },
+        {
+          "value": 7,
+          "count": 196439
+        },
+        {
+          "value": 37,
+          "count": 195463
+        },
+        {
+          "value": 9,
+          "count": 187605
+        },
+        {
+          "value": 15,
+          "count": 186382
+        },
+        {
+          "value": 5,
+          "count": 173184
+        },
+        {
+          "value": 29,
+          "count": 168035
+        },
+        {
+          "value": 4,
+          "count": 144966
+        },
+        {
+          "value": 1,
+          "count": 138072
+        },
+        {
+          "value": 10,
+          "count": 123184
+        },
+        {
+          "value": 26,
+          "count": 122669
+        },
+        {
+          "value": 18,
+          "count": 119109
+        },
+        {
+          "value": 32,
+          "count": 119077
+        },
+        {
+          "value": 25,
+          "count": 105416
+        },
+        {
+          "value": 49,
+          "count": 103887
+        },
+        {
+          "value": 44,
+          "count": 101003
+        },
+        {
+          "value": 31,
+          "count": 99039
+        },
+        {
+          "value": 11,
+          "count": 98229
+        },
+        {
+          "value": 30,
+          "count": 98157
+        },
+        {
+          "value": 46,
+          "count": 97552
+        },
+        {
+          "value": 14,
+          "count": 97157
+        },
+        {
+          "value": 35,
+          "count": 94370
+        },
+        {
+          "value": 23,
+          "count": 91848
+        },
+        {
+          "value": 43,
+          "count": 90423
+        },
+        {
+          "value": 13,
+          "count": 88734
+        },
+        {
+          "value": 12,
+          "count": 88140
+        },
+        {
+          "value": 22,
+          "count": 84504
+        },
+        {
+          "value": 41,
+          "count": 76748
+        },
+        {
+          "value": 36,
+          "count": 76714
+        },
+        {
+          "value": 40,
+          "count": 76575
+        },
+        {
+          "value": 38,
+          "count": 75218
+        },
+        {
+          "value": 47,
+          "count": 75119
+        },
+        {
+          "value": 50,
+          "count": 74734
+        },
+        {
+          "value": 45,
+          "count": 74059
+        },
+        {
+          "value": 48,
+          "count": 73374
+        },
+        {
+          "value": 33,
+          "count": 71840
+        },
+        {
+          "value": 39,
+          "count": 67884
+        },
+        {
+          "value": 19,
+          "count": 64157
+        }
+      ],
+      "missingValuesCount": 614849,
+      "kurtosis": -1.0604102962227147,
+      "max": 50,
+      "mean": 22.756776204163536,
+      "min": 1,
+      "skewness": 0.17103330718918808,
+      "standardDeviation": 13.851029182613345,
+      "sum": 164487981,
+      "zerosCount": 0,
+      "variance": 191.85100941760652,
+      "range": 49,
+      "percentile5": 2.0,
+      "percentile25": 10.0,
+      "percentile75": 34.0,
+      "percentile95": 46.0,
+      "median": 23.0,
+      "interquartileRange": 24.0,
+      "mode": 28,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 614849
+        },
+        {
+          "value": 1,
+          "count": 138072
+        },
+        {
+          "value": 2,
+          "count": 255860
+        },
+        {
+          "value": 3,
+          "count": 220218
+        },
+        {
+          "value": 4,
+          "count": 144966
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 50,
+          "count": 74734
+        },
+        {
+          "value": 49,
+          "count": 103887
+        },
+        {
+          "value": 48,
+          "count": 73374
+        },
+        {
+          "value": 47,
+          "count": 75119
+        },
+        {
+          "value": 46,
+          "count": 97552
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            1,
+            3
+          ],
+          "count": 393932
+        },
+        {
+          "bucket": [
+            3,
+            5
+          ],
+          "count": 365184
+        },
+        {
+          "bucket": [
+            5,
+            7
+          ],
+          "count": 412590
+        },
+        {
+          "bucket": [
+            7,
+            9
+          ],
+          "count": 396263
+        },
+        {
+          "bucket": [
+            9,
+            11
+          ],
+          "count": 310789
+        },
+        {
+          "bucket": [
+            11,
+            13
+          ],
+          "count": 186369
+        },
+        {
+          "bucket": [
+            13,
+            15
+          ],
+          "count": 185891
+        },
+        {
+          "bucket": [
+            15,
+            17
+          ],
+          "count": 394205
+        },
+        {
+          "bucket": [
+            17,
+            19
+          ],
+          "count": 358144
+        },
+        {
+          "bucket": [
+            19,
+            21
+          ],
+          "count": 301365
+        },
+        {
+          "bucket": [
+            21,
+            23
+          ],
+          "count": 303521
+        },
+        {
+          "bucket": [
+            23,
+            26
+          ],
+          "count": 481159
+        },
+        {
+          "bucket": [
+            26,
+            29
+          ],
+          "count": 726676
+        },
+        {
+          "bucket": [
+            29,
+            32
+          ],
+          "count": 365231
+        },
+        {
+          "bucket": [
+            32,
+            35
+          ],
+          "count": 393313
+        },
+        {
+          "bucket": [
+            35,
+            38
+          ],
+          "count": 366547
+        },
+        {
+          "bucket": [
+            38,
+            41
+          ],
+          "count": 219677
+        },
+        {
+          "bucket": [
+            41,
+            44
+          ],
+          "count": 467504
+        },
+        {
+          "bucket": [
+            44,
+            47
+          ],
+          "count": 272614
+        },
+        {
+          "bucket": [
+            47,
+            "inf"
+          ],
+          "count": 327114
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": [],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -1.393887482989248
+          ],
+          "count": 614150
+        },
+        {
+          "bucket": [
+            -1.393887482989248,
+            -1.2170053201045297
+          ],
+          "count": 318150
+        },
+        {
+          "bucket": [
+            -1.2170053201045297,
+            -1.0401231572198113
+          ],
+          "count": 635669
+        },
+        {
+          "bucket": [
+            -1.0401231572198113,
+            -0.863240994335093
+          ],
+          "count": 310789
+        },
+        {
+          "bucket": [
+            -0.863240994335093,
+            -0.6863588314503748
+          ],
+          "count": 275103
+        },
+        {
+          "bucket": [
+            -0.6863588314503748,
+            -0.5094766685656565
+          ],
+          "count": 283539
+        },
+        {
+          "bucket": [
+            -0.5094766685656565,
+            -0.3325945056809383
+          ],
+          "count": 565967
+        },
+        {
+          "bucket": [
+            -0.3325945056809383,
+            -0.15571234279622
+          ],
+          "count": 301365
+        },
+        {
+          "bucket": [
+            -0.15571234279622,
+            0.021169820088498274
+          ],
+          "count": 395369
+        },
+        {
+          "bucket": [
+            0.021169820088498274,
+            0.19805198297321655
+          ],
+          "count": 389311
+        },
+        {
+          "bucket": [
+            0.19805198297321655,
+            0.37493414585793483
+          ],
+          "count": 395117
+        },
+        {
+          "bucket": [
+            0.37493414585793483,
+            0.5518163087426531
+          ],
+          "count": 597751
+        },
+        {
+          "bucket": [
+            0.5518163087426531,
+            0.7286984716273713
+          ],
+          "count": 218116
+        },
+        {
+          "bucket": [
+            0.7286984716273713,
+            0.9055806345120897
+          ],
+          "count": 368606
+        },
+        {
+          "bucket": [
+            0.9055806345120897,
+            1.082462797396808
+          ],
+          "count": 272177
+        },
+        {
+          "bucket": [
+            1.082462797396808,
+            1.259344960281526
+          ],
+          "count": 219677
+        },
+        {
+          "bucket": [
+            1.259344960281526,
+            1.4362271231662445
+          ],
+          "count": 377081
+        },
+        {
+          "bucket": [
+            1.4362271231662445,
+            1.6131092860509628
+          ],
+          "count": 265485
+        },
+        {
+          "bucket": [
+            1.6131092860509628,
+            1.789991448935681
+          ],
+          "count": 172671
+        },
+        {
+          "bucket": [
+            1.789991448935681,
+            "inf"
+          ],
+          "count": 251995
+        }
+      ],
+      "medianAbsoluteDeviation": 12.0
+    },
+    {
+      "name": "Community Area",
+      "type": "int",
+      "correlations": {
+        "ID": -0.014152307256540078,
+        "Beat": -0.4993413169359275,
+        "District": -0.49397223086208947,
+        "Ward": -0.529362424525195,
+        "Community Area": 1.0,
+        "X Coordinate": 0.24881824248353152,
+        "Y Coordinate": -0.754482425259172,
+        "Year": -0.014850298988761522,
+        "Latitude": -0.753533235117317,
+        "Longitude": 0.2405500429607888
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 78,
+      "uniqueValuesCount": 0,
+      "entropy": 4.045373453011095,
+      "mostCommonValues": [
+        {
+          "value": 25,
+          "count": 451277
+        },
+        {
+          "value": 8,
+          "count": 255128
+        },
+        {
+          "value": 43,
+          "count": 238416
+        },
+        {
+          "value": 23,
+          "count": 225491
+        },
+        {
+          "value": 28,
+          "count": 219261
+        },
+        {
+          "value": 24,
+          "count": 211964
+        },
+        {
+          "value": 29,
+          "count": 211591
+        },
+        {
+          "value": 67,
+          "count": 206183
+        },
+        {
+          "value": 71,
+          "count": 204692
+        },
+        {
+          "value": 49,
+          "count": 191936
+        },
+        {
+          "value": 68,
+          "count": 188341
+        },
+        {
+          "value": 69,
+          "count": 179728
+        },
+        {
+          "value": 32,
+          "count": 179585
+        },
+        {
+          "value": 66,
+          "count": 175618
+        },
+        {
+          "value": 44,
+          "count": 159379
+        },
+        {
+          "value": 22,
+          "count": 149426
+        },
+        {
+          "value": 6,
+          "count": 146281
+        },
+        {
+          "value": 61,
+          "count": 145395
+        },
+        {
+          "value": 26,
+          "count": 136439
+        },
+        {
+          "value": 27,
+          "count": 135263
+        },
+        {
+          "value": 46,
+          "count": 133234
+        },
+        {
+          "value": 19,
+          "count": 132518
+        },
+        {
+          "value": 30,
+          "count": 121484
+        },
+        {
+          "value": 53,
+          "count": 118072
+        },
+        {
+          "value": 42,
+          "count": 115585
+        },
+        {
+          "value": 7,
+          "count": 112285
+        },
+        {
+          "value": 1,
+          "count": 111674
+        },
+        {
+          "value": 3,
+          "count": 106117
+        },
+        {
+          "value": 38,
+          "count": 100162
+        },
+        {
+          "value": 2,
+          "count": 92554
+        },
+        {
+          "value": 15,
+          "count": 91575
+        },
+        {
+          "value": 73,
+          "count": 86187
+        },
+        {
+          "value": 16,
+          "count": 81475
+        },
+        {
+          "value": 35,
+          "count": 80558
+        },
+        {
+          "value": 40,
+          "count": 76436
+        },
+        {
+          "value": 77,
+          "count": 72534
+        },
+        {
+          "value": 31,
+          "count": 71099
+        },
+        {
+          "value": 58,
+          "count": 69683
+        },
+        {
+          "value": 21,
+          "count": 66876
+        },
+        {
+          "value": 63,
+          "count": 65780
+        },
+        {
+          "value": 70,
+          "count": 65563
+        },
+        {
+          "value": 14,
+          "count": 64762
+        },
+        {
+          "value": 56,
+          "count": 59684
+        },
+        {
+          "value": 75,
+          "count": 57638
+        },
+        {
+          "value": 33,
+          "count": 56085
+        },
+        {
+          "value": 65,
+          "count": 53122
+        },
+        {
+          "value": 4,
+          "count": 51756
+        },
+        {
+          "value": 51,
+          "count": 47724
+        },
+        {
+          "value": 41,
+          "count": 46731
+        },
+        {
+          "value": 60,
+          "count": 46101
+        }
+      ],
+      "missingValuesCount": 613476,
+      "kurtosis": -1.100907119424489,
+      "max": 77,
+      "mean": 37.47550183893377,
+      "min": 0,
+      "skewness": 0.1821430463335025,
+      "standardDeviation": 21.541696151971934,
+      "sum": 270927679,
+      "zerosCount": 76,
+      "variance": 464.0446731038824,
+      "range": 77,
+      "percentile5": 4.0,
+      "percentile25": 23.0,
+      "percentile75": 57.0,
+      "percentile95": 71.0,
+      "median": 32.0,
+      "interquartileRange": 34.0,
+      "mode": 25,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 613476
+        },
+        {
+          "value": 0,
+          "count": 76
+        },
+        {
+          "value": 1,
+          "count": 111674
+        },
+        {
+          "value": 2,
+          "count": 92554
+        },
+        {
+          "value": 3,
+          "count": 106117
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 77,
+          "count": 72534
+        },
+        {
+          "value": 76,
+          "count": 44051
+        },
+        {
+          "value": 75,
+          "count": 57638
+        },
+        {
+          "value": 74,
+          "count": 16233
+        },
+        {
+          "value": 73,
+          "count": 86187
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            0,
+            3
+          ],
+          "count": 204304
+        },
+        {
+          "bucket": [
+            3,
+            6
+          ],
+          "count": 200543
+        },
+        {
+          "bucket": [
+            6,
+            9
+          ],
+          "count": 513694
+        },
+        {
+          "bucket": [
+            9,
+            13
+          ],
+          "count": 81114
+        },
+        {
+          "bucket": [
+            13,
+            17
+          ],
+          "count": 262163
+        },
+        {
+          "bucket": [
+            17,
+            21
+          ],
+          "count": 237893
+        },
+        {
+          "bucket": [
+            21,
+            25
+          ],
+          "count": 653757
+        },
+        {
+          "bucket": [
+            25,
+            29
+          ],
+          "count": 942240
+        },
+        {
+          "bucket": [
+            29,
+            33
+          ],
+          "count": 583759
+        },
+        {
+          "bucket": [
+            33,
+            37
+          ],
+          "count": 180783
+        },
+        {
+          "bucket": [
+            37,
+            41
+          ],
+          "count": 242499
+        },
+        {
+          "bucket": [
+            41,
+            45
+          ],
+          "count": 560111
+        },
+        {
+          "bucket": [
+            45,
+            49
+          ],
+          "count": 220511
+        },
+        {
+          "bucket": [
+            49,
+            53
+          ],
+          "count": 304596
+        },
+        {
+          "bucket": [
+            53,
+            57
+          ],
+          "count": 226493
+        },
+        {
+          "bucket": [
+            57,
+            61
+          ],
+          "count": 171137
+        },
+        {
+          "bucket": [
+            61,
+            65
+          ],
+          "count": 267711
+        },
+        {
+          "bucket": [
+            65,
+            69
+          ],
+          "count": 623264
+        },
+        {
+          "bucket": [
+            69,
+            73
+          ],
+          "count": 476246
+        },
+        {
+          "bucket": [
+            73,
+            "inf"
+          ],
+          "count": 276643
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": [],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -1.5609495929063917
+          ],
+          "count": 310421
+        },
+        {
+          "bucket": [
+            -1.5609495929063917,
+            -1.3822264332796335
+          ],
+          "count": 352992
+        },
+        {
+          "bucket": [
+            -1.3822264332796335,
+            -1.2035032736528755
+          ],
+          "count": 322783
+        },
+        {
+          "bucket": [
+            -1.2035032736528755,
+            -1.0247801140261175
+          ],
+          "count": 194147
+        },
+        {
+          "bucket": [
+            -1.0247801140261175,
+            -0.8460569543993594
+          ],
+          "count": 275920
+        },
+        {
+          "bucket": [
+            -0.8460569543993594,
+            -0.6673337947726014
+          ],
+          "count": 485241
+        },
+        {
+          "bucket": [
+            -0.6673337947726014,
+            -0.48861063514584324
+          ],
+          "count": 799680
+        },
+        {
+          "bucket": [
+            -0.48861063514584324,
+            -0.3098874755190852
+          ],
+          "count": 687599
+        },
+        {
+          "bucket": [
+            -0.3098874755190852,
+            -0.1311643158923271
+          ],
+          "count": 334161
+        },
+        {
+          "bucket": [
+            -0.1311643158923271,
+            0.04755884373443095
+          ],
+          "count": 221410
+        },
+        {
+          "bucket": [
+            0.04755884373443095,
+            0.226282003361189
+          ],
+          "count": 280711
+        },
+        {
+          "bucket": [
+            0.226282003361189,
+            0.4050051629879471
+          ],
+          "count": 567996
+        },
+        {
+          "bucket": [
+            0.4050051629879471,
+            0.5837283226147052
+          ],
+          "count": 271469
+        },
+        {
+          "bucket": [
+            0.5837283226147052,
+            0.7624514822414632
+          ],
+          "count": 201509
+        },
+        {
+          "bucket": [
+            0.7624514822414632,
+            0.9411746418682213
+          ],
+          "count": 134423
+        },
+        {
+          "bucket": [
+            0.9411746418682213,
+            1.1198978014949794
+          ],
+          "count": 290530
+        },
+        {
+          "bucket": [
+            1.1198978014949794,
+            1.2986209611217374
+          ],
+          "count": 175438
+        },
+        {
+          "bucket": [
+            1.2986209611217374,
+            1.4773441207484954
+          ],
+          "count": 749870
+        },
+        {
+          "bucket": [
+            1.4773441207484954,
+            1.6560672803752536
+          ],
+          "count": 382705
+        },
+        {
+          "bucket": [
+            1.6560672803752536,
+            "inf"
+          ],
+          "count": 190456
+        }
+      ],
+      "medianAbsoluteDeviation": 16.0
+    },
+    {
+      "name": "FBI Code",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 26,
+      "uniqueValuesCount": 0,
+      "entropy": 2.4757264908755174,
+      "mostCommonValues": [
+        {
+          "value": "06",
+          "count": 1654618
+        },
+        {
+          "value": "08B",
+          "count": 1220023
+        },
+        {
+          "value": "14",
+          "count": 894068
+        },
+        {
+          "value": "26",
+          "count": 764805
+        },
+        {
+          "value": "18",
+          "count": 705239
+        },
+        {
+          "value": "05",
+          "count": 426001
+        },
+        {
+          "value": "08A",
+          "count": 394260
+        },
+        {
+          "value": "07",
+          "count": 381815
+        },
+        {
+          "value": "11",
+          "count": 299932
+        },
+        {
+          "value": "03",
+          "count": 294451
+        },
+        {
+          "value": "04B",
+          "count": 215803
+        },
+        {
+          "value": "04A",
+          "count": 138583
+        },
+        {
+          "value": "15",
+          "count": 109646
+        },
+        {
+          "value": "16",
+          "count": 69937
+        },
+        {
+          "value": "24",
+          "count": 56900
+        },
+        {
+          "value": "10",
+          "count": 44294
+        },
+        {
+          "value": "02",
+          "count": 40740
+        },
+        {
+          "value": "17",
+          "count": 40283
+        },
+        {
+          "value": "20",
+          "count": 31091
+        },
+        {
+          "value": "22",
+          "count": 14948
+        },
+        {
+          "value": "19",
+          "count": 14913
+        },
+        {
+          "value": "09",
+          "count": 13265
+        },
+        {
+          "value": "01A",
+          "count": 12639
+        },
+        {
+          "value": "13",
+          "count": 3029
+        },
+        {
+          "value": "12",
+          "count": 1577
+        },
+        {
+          "value": "01B",
+          "count": 77
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 3,
+      "mean": 2.252633037853039,
+      "min": 2,
+      "standardDeviation": 0.43452227803879256,
+      "median": 2.0,
+      "mode": 2,
+      "valueDistribution": [
+        {
+          "bucket": [
+            2,
+            3
+          ],
+          "count": 5861552
+        },
+        {
+          "bucket": [
+            3,
+            "inf"
+          ],
+          "count": 1981385
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "X Coordinate",
+      "type": "int",
+      "correlations": {
+        "ID": 0.007443618300593002,
+        "Beat": -0.4918760043998917,
+        "District": -0.5397877329082866,
+        "Ward": -0.4464098813561223,
+        "Community Area": 0.24881824248353152,
+        "X Coordinate": 1.0,
+        "Y Coordinate": -0.46041901949084635,
+        "Year": 0.00925937496664744,
+        "Latitude": -0.46233517572506044,
+        "Longitude": 0.9998298039107513
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 79044,
+      "uniqueValuesCount": 3813,
+      "entropy": 10.615546789063126,
+      "mostCommonValues": [
+        {
+          "value": 1100658,
+          "count": 14322
+        },
+        {
+          "value": 1145727,
+          "count": 10363
+        },
+        {
+          "value": 1176352,
+          "count": 9592
+        },
+        {
+          "value": 1177338,
+          "count": 7259
+        },
+        {
+          "value": 1176436,
+          "count": 4847
+        },
+        {
+          "value": 1176963,
+          "count": 3783
+        },
+        {
+          "value": 1176365,
+          "count": 3668
+        },
+        {
+          "value": 1145011,
+          "count": 3509
+        },
+        {
+          "value": 1176223,
+          "count": 3397
+        },
+        {
+          "value": 1149512,
+          "count": 3365
+        },
+        {
+          "value": 1145654,
+          "count": 3262
+        },
+        {
+          "value": 1171084,
+          "count": 3029
+        },
+        {
+          "value": 1154228,
+          "count": 2921
+        },
+        {
+          "value": 1176740,
+          "count": 2821
+        },
+        {
+          "value": 1177762,
+          "count": 2727
+        },
+        {
+          "value": 1173303,
+          "count": 2712
+        },
+        {
+          "value": 1100317,
+          "count": 2705
+        },
+        {
+          "value": 1176364,
+          "count": 2700
+        },
+        {
+          "value": 1180796,
+          "count": 2623
+        },
+        {
+          "value": 1163126,
+          "count": 2604
+        },
+        {
+          "value": 1191768,
+          "count": 2532
+        },
+        {
+          "value": 1176389,
+          "count": 2512
+        },
+        {
+          "value": 1173383,
+          "count": 2474
+        },
+        {
+          "value": 1177324,
+          "count": 2418
+        },
+        {
+          "value": 1174313,
+          "count": 2400
+        },
+        {
+          "value": 1176467,
+          "count": 2394
+        },
+        {
+          "value": 1177327,
+          "count": 2352
+        },
+        {
+          "value": 1169846,
+          "count": 2351
+        },
+        {
+          "value": 1176796,
+          "count": 2335
+        },
+        {
+          "value": 1173336,
+          "count": 2315
+        },
+        {
+          "value": 1160867,
+          "count": 2314
+        },
+        {
+          "value": 1177483,
+          "count": 2303
+        },
+        {
+          "value": 1173068,
+          "count": 2279
+        },
+        {
+          "value": 1183056,
+          "count": 2277
+        },
+        {
+          "value": 1175078,
+          "count": 2208
+        },
+        {
+          "value": 1172257,
+          "count": 2194
+        },
+        {
+          "value": 1165916,
+          "count": 2128
+        },
+        {
+          "value": 1191527,
+          "count": 2127
+        },
+        {
+          "value": 1177337,
+          "count": 2104
+        },
+        {
+          "value": 1178850,
+          "count": 2095
+        },
+        {
+          "value": 1173144,
+          "count": 2020
+        },
+        {
+          "value": 1173175,
+          "count": 1967
+        },
+        {
+          "value": 1175887,
+          "count": 1966
+        },
+        {
+          "value": 1177279,
+          "count": 1958
+        },
+        {
+          "value": 1166183,
+          "count": 1943
+        },
+        {
+          "value": 1187940,
+          "count": 1934
+        },
+        {
+          "value": 1176363,
+          "count": 1924
+        },
+        {
+          "value": 1101811,
+          "count": 1912
+        },
+        {
+          "value": 1182930,
+          "count": 1911
+        },
+        {
+          "value": 1183356,
+          "count": 1897
+        }
+      ],
+      "missingValuesCount": 88022,
+      "kurtosis": 347.55568348975464,
+      "max": 1205119,
+      "mean": 1164605.7695840637,
+      "min": 0,
+      "skewness": -5.285895976573813,
+      "standardDeviation": 16843.06706605442,
+      "sum": 9031418751634,
+      "zerosCount": 118,
+      "variance": 283688908.191607,
+      "range": 1205119,
+      "percentile5": 1138406.0,
+      "percentile25": 1152984.0,
+      "percentile75": 1176383.0,
+      "percentile95": 1191182.0,
+      "median": 1166120.0,
+      "interquartileRange": 23399.0,
+      "mode": 1100658,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 88022
+        },
+        {
+          "value": 0,
+          "count": 118
+        },
+        {
+          "value": 1091242,
+          "count": 9
+        },
+        {
+          "value": 1092647,
+          "count": 2
+        },
+        {
+          "value": 1092706,
+          "count": 8
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 1205119,
+          "count": 35
+        },
+        {
+          "value": 1205117,
+          "count": 23
+        },
+        {
+          "value": 1205116,
+          "count": 52
+        },
+        {
+          "value": 1205114,
+          "count": 30
+        },
+        {
+          "value": 1205112,
+          "count": 20
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            0,
+            60255
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            60255,
+            120511
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            120511,
+            180767
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            180767,
+            241023
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            241023,
+            301279
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            301279,
+            361535
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            361535,
+            421791
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            421791,
+            482047
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            482047,
+            542303
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            542303,
+            602559
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            602559,
+            662815
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            662815,
+            723071
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            723071,
+            783327
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            783327,
+            843583
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            843583,
+            903839
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            903839,
+            964095
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            964095,
+            1024351
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1024351,
+            1084607
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1084607,
+            1144863
+          ],
+          "count": 968705
+        },
+        {
+          "bucket": [
+            1144863,
+            "inf"
+          ],
+          "count": 6786092
+        }
+      ],
+      "zScoreOutliersCount": 30565,
+      "zScoreOutliersSample": [
+        {
+          "value": 0,
+          "zScore": -69.14451892976277
+        },
+        {
+          "value": 1091242,
+          "zScore": -4.355725076457202
+        },
+        {
+          "value": 1092647,
+          "zScore": -4.272307965162096
+        },
+        {
+          "value": 1092706,
+          "zScore": -4.268805040203796
+        },
+        {
+          "value": 1092711,
+          "zScore": -4.2685081821564825
+        },
+        {
+          "value": 1093524,
+          "zScore": -4.2202390636633
+        },
+        {
+          "value": 1093568,
+          "zScore": -4.217626712846941
+        },
+        {
+          "value": 1094231,
+          "zScore": -4.178263335773165
+        },
+        {
+          "value": 1094232,
+          "zScore": -4.178203964163702
+        },
+        {
+          "value": 1094470,
+          "zScore": -4.164073521111577
+        },
+        {
+          "value": 1094587,
+          "zScore": -4.15712704280444
+        },
+        {
+          "value": 1094685,
+          "zScore": -4.151308625077095
+        },
+        {
+          "value": 1094780,
+          "zScore": -4.145668322178137
+        },
+        {
+          "value": 1094886,
+          "zScore": -4.13937493157509
+        },
+        {
+          "value": 1095046,
+          "zScore": -4.129875474061057
+        },
+        {
+          "value": 1095120,
+          "zScore": -4.125481974960817
+        },
+        {
+          "value": 1095173,
+          "zScore": -4.122335279659293
+        },
+        {
+          "value": 1095195,
+          "zScore": -4.121029104251114
+        },
+        {
+          "value": 1095268,
+          "zScore": -4.116694976760336
+        },
+        {
+          "value": 1095392,
+          "zScore": -4.10933289718696
+        },
+        {
+          "value": 1095476,
+          "zScore": -4.104345681992092
+        },
+        {
+          "value": 1095509,
+          "zScore": -4.1023864188798225
+        },
+        {
+          "value": 1095545,
+          "zScore": -4.100249040939165
+        },
+        {
+          "value": 1095658,
+          "zScore": -4.093540049069879
+        },
+        {
+          "value": 1095660,
+          "zScore": -4.093421305850954
+        },
+        {
+          "value": 1095801,
+          "zScore": -4.085049908916711
+        },
+        {
+          "value": 1095842,
+          "zScore": -4.082615672928741
+        },
+        {
+          "value": 1095860,
+          "zScore": -4.081546983958412
+        },
+        {
+          "value": 1095883,
+          "zScore": -4.080181436940769
+        },
+        {
+          "value": 1095903,
+          "zScore": -4.078994004751515
+        },
+        {
+          "value": 1095995,
+          "zScore": -4.073531816680946
+        },
+        {
+          "value": 1096020,
+          "zScore": -4.072047526444378
+        },
+        {
+          "value": 1096164,
+          "zScore": -4.063498014681748
+        },
+        {
+          "value": 1096288,
+          "zScore": -4.056135935108372
+        },
+        {
+          "value": 1096677,
+          "zScore": -4.033040379027378
+        },
+        {
+          "value": 1096681,
+          "zScore": -4.032802892589528
+        },
+        {
+          "value": 1096712,
+          "zScore": -4.030962372696184
+        },
+        {
+          "value": 1096802,
+          "zScore": -4.02561892784454
+        },
+        {
+          "value": 1097128,
+          "zScore": -4.006263783159697
+        },
+        {
+          "value": 1097140,
+          "zScore": -4.005551323846144
+        },
+        {
+          "value": 1097256,
+          "zScore": -3.99866421714847
+        },
+        {
+          "value": 1097306,
+          "zScore": -3.9956956366753342
+        },
+        {
+          "value": 1097376,
+          "zScore": -3.991539624012945
+        },
+        {
+          "value": 1097414,
+          "zScore": -3.989283502853362
+        },
+        {
+          "value": 1097427,
+          "zScore": -3.988511671930347
+        },
+        {
+          "value": 1097733,
+          "zScore": -3.9703439594347576
+        },
+        {
+          "value": 1097841,
+          "zScore": -3.963931825612785
+        },
+        {
+          "value": 1097854,
+          "zScore": -3.9631599946897698
+        },
+        {
+          "value": 1098004,
+          "zScore": -3.9542542532703635
+        },
+        {
+          "value": 1098012,
+          "zScore": -3.9537792803946616
+        }
+      ],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -65.56702619855824
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            -65.56702619855824,
+            -61.98953346735372
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -61.98953346735372,
+            -58.412040736149194
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -58.412040736149194,
+            -54.83454800494467
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -54.83454800494467,
+            -51.25705527374015
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -51.25705527374015,
+            -47.67956254253562
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -47.67956254253562,
+            -44.1020698113311
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -44.1020698113311,
+            -40.524577080126576
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -40.524577080126576,
+            -36.94708434892205
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -36.94708434892205,
+            -33.369591617717525
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -33.369591617717525,
+            -29.792098886513003
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -29.792098886513003,
+            -26.214606155308477
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -26.214606155308477,
+            -22.63711342410395
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -22.63711342410395,
+            -19.05962069289943
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -19.05962069289943,
+            -15.482127961694903
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -15.482127961694903,
+            -11.90463523049038
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -11.90463523049038,
+            -8.327142499285856
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -8.327142499285856,
+            -4.749649768081331
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -4.749649768081331,
+            -1.1721570368768064
+          ],
+          "count": 968733
+        },
+        {
+          "bucket": [
+            -1.1721570368768064,
+            "inf"
+          ],
+          "count": 6786064
+        }
+      ],
+      "medianAbsoluteDeviation": 11269.0
+    },
+    {
+      "name": "Y Coordinate",
+      "type": "int",
+      "correlations": {
+        "ID": 0.00012796672516208687,
+        "Beat": 0.6209744017500095,
+        "District": 0.6281568011005675,
+        "Ward": 0.6368997940251931,
+        "Community Area": -0.754482425259172,
+        "X Coordinate": -0.46041901949084635,
+        "Y Coordinate": 1.0,
+        "Year": 0.0007218566059118519,
+        "Latitude": 0.9999937890896005,
+        "Longitude": -0.4554391782318032
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 130212,
+      "uniqueValuesCount": 3863,
+      "entropy": 11.061324973785688,
+      "mostCommonValues": [
+        {
+          "value": 1934241,
+          "count": 14338
+        },
+        {
+          "value": 1853720,
+          "count": 10451
+        },
+        {
+          "value": 1900927,
+          "count": 8510
+        },
+        {
+          "value": 1906181,
+          "count": 5036
+        },
+        {
+          "value": 1910225,
+          "count": 3858
+        },
+        {
+          "value": 1905805,
+          "count": 3416
+        },
+        {
+          "value": 1866253,
+          "count": 3322
+        },
+        {
+          "value": 1950346,
+          "count": 3181
+        },
+        {
+          "value": 1950347,
+          "count": 3085
+        },
+        {
+          "value": 1901446,
+          "count": 3066
+        },
+        {
+          "value": 1895173,
+          "count": 2815
+        },
+        {
+          "value": 1847273,
+          "count": 2760
+        },
+        {
+          "value": 1900502,
+          "count": 2747
+        },
+        {
+          "value": 1841949,
+          "count": 2737
+        },
+        {
+          "value": 1935229,
+          "count": 2715
+        },
+        {
+          "value": 1921430,
+          "count": 2711
+        },
+        {
+          "value": 1847705,
+          "count": 2624
+        },
+        {
+          "value": 1895451,
+          "count": 2616
+        },
+        {
+          "value": 1908425,
+          "count": 2592
+        },
+        {
+          "value": 1852629,
+          "count": 2487
+        },
+        {
+          "value": 1904058,
+          "count": 2475
+        },
+        {
+          "value": 1903917,
+          "count": 2421
+        },
+        {
+          "value": 1900524,
+          "count": 2400
+        },
+        {
+          "value": 1830380,
+          "count": 2321
+        },
+        {
+          "value": 1906733,
+          "count": 2315
+        },
+        {
+          "value": 1847230,
+          "count": 2312
+        },
+        {
+          "value": 1859276,
+          "count": 2248
+        },
+        {
+          "value": 1917657,
+          "count": 2227
+        },
+        {
+          "value": 1848421,
+          "count": 2220
+        },
+        {
+          "value": 1909520,
+          "count": 2218
+        },
+        {
+          "value": 1905133,
+          "count": 2208
+        },
+        {
+          "value": 1900278,
+          "count": 2200
+        },
+        {
+          "value": 1898416,
+          "count": 2197
+        },
+        {
+          "value": 1901735,
+          "count": 2171
+        },
+        {
+          "value": 1897564,
+          "count": 2167
+        },
+        {
+          "value": 1893976,
+          "count": 2126
+        },
+        {
+          "value": 1908290,
+          "count": 2122
+        },
+        {
+          "value": 1849610,
+          "count": 2117
+        },
+        {
+          "value": 1858274,
+          "count": 2094
+        },
+        {
+          "value": 1894850,
+          "count": 2085
+        },
+        {
+          "value": 1909988,
+          "count": 2068
+        },
+        {
+          "value": 1836216,
+          "count": 2062
+        },
+        {
+          "value": 1875603,
+          "count": 2023
+        },
+        {
+          "value": 1864073,
+          "count": 1989
+        },
+        {
+          "value": 1869033,
+          "count": 1950
+        },
+        {
+          "value": 1934419,
+          "count": 1941
+        },
+        {
+          "value": 1831503,
+          "count": 1924
+        },
+        {
+          "value": 1897193,
+          "count": 1920
+        },
+        {
+          "value": 1862203,
+          "count": 1917
+        },
+        {
+          "value": 1894587,
+          "count": 1915
+        }
+      ],
+      "missingValuesCount": 88022,
+      "kurtosis": 176.24697782201116,
+      "max": 1951622,
+      "mean": 1885793.1909788824,
+      "min": 0,
+      "skewness": -3.0810039961840032,
+      "standardDeviation": 32271.625557466545,
+      "sum": 14624165903620,
+      "zerosCount": 118,
+      "variance": 1041457816.1213278,
+      "range": 1951622,
+      "percentile5": 1834602.0,
+      "percentile25": 1859078.0,
+      "percentile75": 1909281.0,
+      "percentile95": 1935100.0,
+      "median": 1890736.0,
+      "interquartileRange": 50203.0,
+      "mode": 1934241,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 88022
+        },
+        {
+          "value": 0,
+          "count": 118
+        },
+        {
+          "value": 1813894,
+          "count": 4
+        },
+        {
+          "value": 1813896,
+          "count": 1
+        },
+        {
+          "value": 1813897,
+          "count": 9
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 1951622,
+          "count": 1
+        },
+        {
+          "value": 1951610,
+          "count": 1
+        },
+        {
+          "value": 1951573,
+          "count": 1
+        },
+        {
+          "value": 1951535,
+          "count": 4
+        },
+        {
+          "value": 1951532,
+          "count": 93
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            0,
+            97581
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            97581,
+            195162
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            195162,
+            292743
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            292743,
+            390324
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            390324,
+            487905
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            487905,
+            585486
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            585486,
+            683067
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            683067,
+            780648
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            780648,
+            878229
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            878229,
+            975810
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            975810,
+            1073391
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1073391,
+            1170972
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1170972,
+            1268553
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1268553,
+            1366134
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1366134,
+            1463715
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1463715,
+            1561296
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1561296,
+            1658877
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1658877,
+            1756458
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            1756458,
+            1854040
+          ],
+          "count": 1446681
+        },
+        {
+          "bucket": [
+            1854040,
+            "inf"
+          ],
+          "count": 6308116
+        }
+      ],
+      "zScoreOutliersCount": 118,
+      "zScoreOutliersSample": [
+        {
+          "value": 0,
+          "zScore": -58.435023287588145
+        }
+      ],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -55.41128034578201
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            -55.41128034578201,
+            -52.38753740397587
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -52.38753740397587,
+            -49.363794462169736
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -49.363794462169736,
+            -46.340051520363595
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -46.340051520363595,
+            -43.31630857855746
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -43.31630857855746,
+            -40.29256563675133
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -40.29256563675133,
+            -37.268822694945186
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -37.268822694945186,
+            -34.24507975313905
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -34.24507975313905,
+            -31.221336811332915
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -31.221336811332915,
+            -28.197593869526777
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -28.197593869526777,
+            -25.17385092772064
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -25.17385092772064,
+            -22.150107985914506
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -22.150107985914506,
+            -19.12636504410837
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -19.12636504410837,
+            -16.10262210230223
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -16.10262210230223,
+            -13.078879160496095
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -13.078879160496095,
+            -10.055136218689958
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -10.055136218689958,
+            -7.031393276883821
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -7.031393276883821,
+            -4.007650335077685
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -4.007650335077685,
+            -0.9839073932715477
+          ],
+          "count": 1446747
+        },
+        {
+          "bucket": [
+            -0.9839073932715477,
+            "inf"
+          ],
+          "count": 6308050
+        }
+      ],
+      "medianAbsoluteDeviation": 26174.0
+    },
+    {
+      "name": "Year",
+      "type": "int",
+      "correlations": {
+        "ID": 0.9842047780320573,
+        "Beat": -0.0397765192076091,
+        "District": -0.005296558589938074,
+        "Ward": 0.02122088255442136,
+        "Community Area": -0.014850298988761522,
+        "X Coordinate": 0.00925937496664744,
+        "Y Coordinate": 0.0007218566059118519,
+        "Year": 1.0,
+        "Latitude": 0.0006795824433807602,
+        "Longitude": 0.009382704047742864
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 23,
+      "uniqueValuesCount": 0,
+      "entropy": 3.088010395705159,
+      "mostCommonValues": [
+        {
+          "value": 2002,
+          "count": 486805
+        },
+        {
+          "value": 2001,
+          "count": 485885
+        },
+        {
+          "value": 2003,
+          "count": 475983
+        },
+        {
+          "value": 2004,
+          "count": 469421
+        },
+        {
+          "value": 2005,
+          "count": 453772
+        },
+        {
+          "value": 2006,
+          "count": 448178
+        },
+        {
+          "value": 2007,
+          "count": 437087
+        },
+        {
+          "value": 2008,
+          "count": 427169
+        },
+        {
+          "value": 2009,
+          "count": 392825
+        },
+        {
+          "value": 2010,
+          "count": 370504
+        },
+        {
+          "value": 2011,
+          "count": 351974
+        },
+        {
+          "value": 2012,
+          "count": 336273
+        },
+        {
+          "value": 2013,
+          "count": 307476
+        },
+        {
+          "value": 2014,
+          "count": 275742
+        },
+        {
+          "value": 2016,
+          "count": 269807
+        },
+        {
+          "value": 2017,
+          "count": 269093
+        },
+        {
+          "value": 2018,
+          "count": 268809
+        },
+        {
+          "value": 2015,
+          "count": 264774
+        },
+        {
+          "value": 2019,
+          "count": 261291
+        },
+        {
+          "value": 2022,
+          "count": 238694
+        },
+        {
+          "value": 2020,
+          "count": 212166
+        },
+        {
+          "value": 2021,
+          "count": 208716
+        },
+        {
+          "value": 2023,
+          "count": 130493
+        }
+      ],
+      "missingValuesCount": 0,
+      "kurtosis": -1.008487161675746,
+      "max": 2023,
+      "mean": 2010.0409075069708,
+      "min": 2001,
+      "skewness": 0.36184912317100176,
+      "standardDeviation": 6.336774736085888,
+      "sum": 15764624205,
+      "zerosCount": 0,
+      "variance": 40.154714055896385,
+      "range": 22,
+      "percentile5": 2001.0,
+      "percentile25": 2005.0,
+      "percentile75": 2015.0,
+      "percentile95": 2021.0,
+      "median": 2009.0,
+      "interquartileRange": 10.0,
+      "mode": 2002,
+      "minimumValues": [
+        {
+          "value": 2001,
+          "count": 485885
+        },
+        {
+          "value": 2002,
+          "count": 486805
+        },
+        {
+          "value": 2003,
+          "count": 475983
+        },
+        {
+          "value": 2004,
+          "count": 469421
+        },
+        {
+          "value": 2005,
+          "count": 453772
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 2023,
+          "count": 130493
+        },
+        {
+          "value": 2022,
+          "count": 238694
+        },
+        {
+          "value": 2021,
+          "count": 208716
+        },
+        {
+          "value": 2020,
+          "count": 212166
+        },
+        {
+          "value": 2019,
+          "count": 261291
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            2001,
+            2002
+          ],
+          "count": 485885
+        },
+        {
+          "bucket": [
+            2002,
+            2003
+          ],
+          "count": 486805
+        },
+        {
+          "bucket": [
+            2003,
+            2004
+          ],
+          "count": 475983
+        },
+        {
+          "bucket": [
+            2004,
+            2005
+          ],
+          "count": 469421
+        },
+        {
+          "bucket": [
+            2005,
+            2006
+          ],
+          "count": 453772
+        },
+        {
+          "bucket": [
+            2006,
+            2007
+          ],
+          "count": 448178
+        },
+        {
+          "bucket": [
+            2007,
+            2008
+          ],
+          "count": 437087
+        },
+        {
+          "bucket": [
+            2008,
+            2009
+          ],
+          "count": 427169
+        },
+        {
+          "bucket": [
+            2009,
+            2010
+          ],
+          "count": 392825
+        },
+        {
+          "bucket": [
+            2010,
+            2011
+          ],
+          "count": 370504
+        },
+        {
+          "bucket": [
+            2011,
+            2012
+          ],
+          "count": 351974
+        },
+        {
+          "bucket": [
+            2012,
+            2013
+          ],
+          "count": 336273
+        },
+        {
+          "bucket": [
+            2013,
+            2014
+          ],
+          "count": 307476
+        },
+        {
+          "bucket": [
+            2014,
+            2015
+          ],
+          "count": 275742
+        },
+        {
+          "bucket": [
+            2015,
+            2016
+          ],
+          "count": 264774
+        },
+        {
+          "bucket": [
+            2016,
+            2017
+          ],
+          "count": 269807
+        },
+        {
+          "bucket": [
+            2017,
+            2018
+          ],
+          "count": 269093
+        },
+        {
+          "bucket": [
+            2018,
+            2019
+          ],
+          "count": 268809
+        },
+        {
+          "bucket": [
+            2019,
+            2021
+          ],
+          "count": 473457
+        },
+        {
+          "bucket": [
+            2021,
+            "inf"
+          ],
+          "count": 577903
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": [],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -1.253146567093496
+          ],
+          "count": 972690
+        },
+        {
+          "bucket": [
+            -1.253146567093496,
+            -1.0795566817318063
+          ],
+          "count": 475983
+        },
+        {
+          "bucket": [
+            -1.0795566817318063,
+            -0.9059667963701168
+          ],
+          "count": 469421
+        },
+        {
+          "bucket": [
+            -0.9059667963701168,
+            -0.7323769110084272
+          ],
+          "count": 453772
+        },
+        {
+          "bucket": [
+            -0.7323769110084272,
+            -0.5587870256467377
+          ],
+          "count": 448178
+        },
+        {
+          "bucket": [
+            -0.5587870256467377,
+            -0.38519714028504803
+          ],
+          "count": 437087
+        },
+        {
+          "bucket": [
+            -0.38519714028504803,
+            -0.21160725492335847
+          ],
+          "count": 427169
+        },
+        {
+          "bucket": [
+            -0.21160725492335847,
+            -0.0380173695616689
+          ],
+          "count": 392825
+        },
+        {
+          "bucket": [
+            -0.0380173695616689,
+            0.13557251580002067
+          ],
+          "count": 370504
+        },
+        {
+          "bucket": [
+            0.13557251580002067,
+            0.30916240116171023
+          ],
+          "count": 688247
+        },
+        {
+          "bucket": [
+            0.30916240116171023,
+            0.4827522865233998
+          ],
+          "count": 307476
+        },
+        {
+          "bucket": [
+            0.4827522865233998,
+            0.6563421718850894
+          ],
+          "count": 275742
+        },
+        {
+          "bucket": [
+            0.6563421718850894,
+            0.829932057246779
+          ],
+          "count": 264774
+        },
+        {
+          "bucket": [
+            0.829932057246779,
+            1.0035219426084685
+          ],
+          "count": 269807
+        },
+        {
+          "bucket": [
+            1.0035219426084685,
+            1.1771118279701582
+          ],
+          "count": 269093
+        },
+        {
+          "bucket": [
+            1.1771118279701582,
+            1.3507017133318477
+          ],
+          "count": 268809
+        },
+        {
+          "bucket": [
+            1.3507017133318477,
+            1.5242915986935373
+          ],
+          "count": 261291
+        },
+        {
+          "bucket": [
+            1.5242915986935373,
+            1.6978814840552268
+          ],
+          "count": 212166
+        },
+        {
+          "bucket": [
+            1.6978814840552268,
+            1.8714713694169165
+          ],
+          "count": 208716
+        },
+        {
+          "bucket": [
+            1.8714713694169165,
+            "inf"
+          ],
+          "count": 369187
+        }
+      ],
+      "medianAbsoluteDeviation": 5.0
+    },
+    {
+      "name": "Updated On",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 5715,
+      "uniqueValuesCount": 532,
+      "entropy": 2.447133287335011,
+      "mostCommonValues": [
+        {
+          "value": "02/10/2018 03:50:01 PM",
+          "count": 2787894
+        },
+        {
+          "value": "02/28/2018 03:56:25 PM",
+          "count": 2764997
+        },
+        {
+          "value": "08/17/2015 03:03:40 PM",
+          "count": 527573
+        },
+        {
+          "value": "02/04/2016 06:33:39 AM",
+          "count": 349162
+        },
+        {
+          "value": "01/03/2023 03:46:28 PM",
+          "count": 228179
+        },
+        {
+          "value": "07/15/2023 04:45:57 PM",
+          "count": 128011
+        },
+        {
+          "value": "05/04/2018 03:51:04 PM",
+          "count": 84252
+        },
+        {
+          "value": "12/17/2020 03:44:58 PM",
+          "count": 31108
+        },
+        {
+          "value": "06/30/2019 03:56:27 PM",
+          "count": 25040
+        },
+        {
+          "value": "02/14/2017 03:49:42 PM",
+          "count": 18121
+        },
+        {
+          "value": "07/19/2019 04:09:50 PM",
+          "count": 8778
+        },
+        {
+          "value": "09/18/2022 04:45:51 PM",
+          "count": 8676
+        },
+        {
+          "value": "02/09/2018 03:44:29 PM",
+          "count": 6101
+        },
+        {
+          "value": "01/18/2019 09:37:14 AM",
+          "count": 5341
+        },
+        {
+          "value": "10/26/2018 04:01:05 PM",
+          "count": 5184
+        },
+        {
+          "value": "01/10/2019 03:16:50 PM",
+          "count": 4704
+        },
+        {
+          "value": "01/16/2021 03:49:23 PM",
+          "count": 3783
+        },
+        {
+          "value": "08/31/2022 04:51:30 PM",
+          "count": 3226
+        },
+        {
+          "value": "01/23/2019 11:26:56 AM",
+          "count": 2880
+        },
+        {
+          "value": "01/23/2019 04:13:37 PM",
+          "count": 2740
+        },
+        {
+          "value": "03/18/2020 03:52:17 PM",
+          "count": 2199
+        },
+        {
+          "value": "06/25/2021 05:06:33 PM",
+          "count": 1827
+        },
+        {
+          "value": "10/25/2018 04:10:05 PM",
+          "count": 1639
+        },
+        {
+          "value": "02/19/2021 03:45:56 PM",
+          "count": 1393
+        },
+        {
+          "value": "06/07/2020 03:47:20 PM",
+          "count": 1156
+        },
+        {
+          "value": "07/16/2023 04:47:16 PM",
+          "count": 823
+        },
+        {
+          "value": "03/31/2006 10:03:38 PM",
+          "count": 809
+        },
+        {
+          "value": "08/25/2018 03:59:23 PM",
+          "count": 793
+        },
+        {
+          "value": "11/07/2018 04:21:48 PM",
+          "count": 772
+        },
+        {
+          "value": "06/05/2018 03:53:03 PM",
+          "count": 764
+        },
+        {
+          "value": "06/27/2018 04:15:34 PM",
+          "count": 762
+        },
+        {
+          "value": "08/11/2018 04:12:27 PM",
+          "count": 756
+        },
+        {
+          "value": "07/01/2018 03:55:31 PM",
+          "count": 754
+        },
+        {
+          "value": "06/03/2018 03:52:24 PM",
+          "count": 750
+        },
+        {
+          "value": "06/04/2018 04:01:50 PM",
+          "count": 741
+        },
+        {
+          "value": "07/13/2018 03:50:04 PM",
+          "count": 740
+        },
+        {
+          "value": "06/10/2018 03:50:33 PM",
+          "count": 739
+        },
+        {
+          "value": "06/30/2018 03:49:07 PM",
+          "count": 739
+        },
+        {
+          "value": "08/11/2019 04:09:37 PM",
+          "count": 735
+        },
+        {
+          "value": "07/15/2023 04:54:54 PM",
+          "count": 734
+        },
+        {
+          "value": "08/10/2019 04:09:39 PM",
+          "count": 734
+        },
+        {
+          "value": "09/21/2018 04:12:37 PM",
+          "count": 733
+        },
+        {
+          "value": "08/12/2018 03:59:11 PM",
+          "count": 732
+        },
+        {
+          "value": "07/08/2018 04:08:06 PM",
+          "count": 729
+        },
+        {
+          "value": "08/29/2018 04:05:03 PM",
+          "count": 728
+        },
+        {
+          "value": "06/06/2018 03:54:13 PM",
+          "count": 728
+        },
+        {
+          "value": "08/19/2018 04:03:34 PM",
+          "count": 726
+        },
+        {
+          "value": "06/02/2018 03:48:31 PM",
+          "count": 725
+        },
+        {
+          "value": "08/10/2018 04:09:29 PM",
+          "count": 724
+        },
+        {
+          "value": "08/31/2019 04:06:01 PM",
+          "count": 723
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 22,
+      "mean": 22.0,
+      "min": 22,
+      "standardDeviation": 0.0,
+      "median": 22.0,
+      "mode": 22,
+      "valueDistribution": [
+        {
+          "bucket": [
+            22.0,
+            22.0
+          ],
+          "count": 7842937
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "correlations": {
+        "ID": 9.326034742443518e-05,
+        "Beat": 0.6213519083163442,
+        "District": 0.6287078217589745,
+        "Ward": 0.6370368057427842,
+        "Community Area": -0.753533235117317,
+        "X Coordinate": -0.46233517572506044,
+        "Y Coordinate": 0.9999937890896005,
+        "Year": 0.0006795824433807602,
+        "Latitude": 1.0,
+        "Longitude": -0.4574089965675707
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 891228,
+      "uniqueValuesCount": 317739,
+      "entropy": 12.429065923034727,
+      "mostCommonValues": [
+        {
+          "value": 41.976290414,
+          "count": 14322
+        },
+        {
+          "value": 41.754592961,
+          "count": 10328
+        },
+        {
+          "value": 41.883500187,
+          "count": 8486
+        },
+        {
+          "value": 41.897895128,
+          "count": 4874
+        },
+        {
+          "value": 41.909664252,
+          "count": 3500
+        },
+        {
+          "value": 41.896888586,
+          "count": 3383
+        },
+        {
+          "value": 41.788987036,
+          "count": 3229
+        },
+        {
+          "value": 41.885487535,
+          "count": 2912
+        },
+        {
+          "value": 41.868180939,
+          "count": 2805
+        },
+        {
+          "value": 41.88233367,
+          "count": 2725
+        },
+        {
+          "value": 41.979006297,
+          "count": 2705
+        },
+        {
+          "value": 41.736259984,
+          "count": 2692
+        },
+        {
+          "value": 41.721627204,
+          "count": 2643
+        },
+        {
+          "value": 41.868541914,
+          "count": 2579
+        },
+        {
+          "value": 41.904192368,
+          "count": 2541
+        },
+        {
+          "value": 42.019399237,
+          "count": 2506
+        },
+        {
+          "value": 41.891990384,
+          "count": 2462
+        },
+        {
+          "value": 41.737094305,
+          "count": 2461
+        },
+        {
+          "value": 41.68995741,
+          "count": 2308
+        },
+        {
+          "value": 41.736148121,
+          "count": 2298
+        },
+        {
+          "value": 41.899410159,
+          "count": 2267
+        },
+        {
+          "value": 41.882394062,
+          "count": 2240
+        },
+        {
+          "value": 41.750940757,
+          "count": 2219
+        },
+        {
+          "value": 41.739265865,
+          "count": 2206
+        },
+        {
+          "value": 41.929743818,
+          "count": 2198
+        },
+        {
+          "value": 41.891694878,
+          "count": 2193
+        },
+        {
+          "value": 41.907153315,
+          "count": 2190
+        },
+        {
+          "value": 41.88171846,
+          "count": 2133
+        },
+        {
+          "value": 41.864493678,
+          "count": 2108
+        },
+        {
+          "value": 41.874363279,
+          "count": 2105
+        },
+        {
+          "value": 41.866810739,
+          "count": 2084
+        },
+        {
+          "value": 41.766102387,
+          "count": 2062
+        },
+        {
+          "value": 41.706070186,
+          "count": 2061
+        },
+        {
+          "value": 41.742710224,
+          "count": 2052
+        },
+        {
+          "value": 41.908430535,
+          "count": 2052
+        },
+        {
+          "value": 41.876607964,
+          "count": 2049
+        },
+        {
+          "value": 41.814007401,
+          "count": 1957
+        },
+        {
+          "value": 41.903775756,
+          "count": 1914
+        },
+        {
+          "value": 41.976762981,
+          "count": 1912
+        },
+        {
+          "value": 41.795991039,
+          "count": 1910
+        },
+        {
+          "value": 41.78210152,
+          "count": 1901
+        },
+        {
+          "value": 41.976200173,
+          "count": 1862
+        },
+        {
+          "value": 41.769185486,
+          "count": 1858
+        },
+        {
+          "value": 41.692833841,
+          "count": 1858
+        },
+        {
+          "value": 41.777309867,
+          "count": 1849
+        },
+        {
+          "value": 41.892753031,
+          "count": 1841
+        },
+        {
+          "value": 41.866331725,
+          "count": 1819
+        },
+        {
+          "value": 41.873699424,
+          "count": 1815
+        },
+        {
+          "value": 41.918711651,
+          "count": 1806
+        },
+        {
+          "value": 41.86821682,
+          "count": 1802
+        }
+      ],
+      "missingValuesCount": 88022,
+      "kurtosis": 181.0194338139326,
+      "max": 42.022910333,
+      "mean": 41.84221190567955,
+      "min": 36.619446395,
+      "skewness": -3.1430556049939233,
+      "standardDeviation": 0.08878555411090586,
+      "sum": 324482796.74053293,
+      "zerosCount": 0,
+      "variance": 0.007882874618780593,
+      "range": 5.403463938000002,
+      "percentile5": 41.701498468,
+      "percentile25": 41.768727829,
+      "percentile75": 41.906797102,
+      "percentile95": 41.977960408,
+      "median": 41.855928782,
+      "interquartileRange": 0.13806927299999927,
+      "mode": 41.976290414,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 88022
+        },
+        {
+          "value": 36.619446395,
+          "count": 118
+        },
+        {
+          "value": 41.644585429,
+          "count": 4
+        },
+        {
+          "value": 41.644588224,
+          "count": 1
+        },
+        {
+          "value": 41.644589713,
+          "count": 9
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 42.022910333,
+          "count": 1
+        },
+        {
+          "value": 42.022878225,
+          "count": 1
+        },
+        {
+          "value": 42.022709624,
+          "count": 1
+        },
+        {
+          "value": 42.022671246,
+          "count": 4
+        },
+        {
+          "value": 42.022653914,
+          "count": 1
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            36.8896195919
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            36.8896195919,
+            37.1597927888
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            37.1597927888,
+            37.4299659857
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            37.4299659857,
+            37.7001391826
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            37.7001391826,
+            37.9703123795
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            37.9703123795,
+            38.2404855764
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            38.2404855764,
+            38.5106587733
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            38.5106587733,
+            38.7808319702
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            38.7808319702,
+            39.0510051671
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            39.0510051671,
+            39.321178364
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            39.321178364,
+            39.5913515609
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            39.5913515609,
+            39.8615247578
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            39.8615247578,
+            40.1316979547
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            40.1316979547,
+            40.4018711516
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            40.4018711516,
+            40.6720443485
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            40.6720443485,
+            40.9422175454
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            40.9422175454,
+            41.2123907423
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            41.2123907423,
+            41.4825639392
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            41.4825639392,
+            41.7527371361
+          ],
+          "count": 1375180
+        },
+        {
+          "bucket": [
+            41.7527371361,
+            "inf"
+          ],
+          "count": 6379617
+        }
+      ],
+      "zScoreOutliersCount": 118,
+      "zScoreOutliersSample": [
+        {
+          "value": 36.619446395,
+          "zScore": -58.82449642827672
+        }
+      ],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -55.78151044248769
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            -55.78151044248769,
+            -52.73852445669866
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -52.73852445669866,
+            -49.69553847090963
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -49.69553847090963,
+            -46.6525524851206
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -46.6525524851206,
+            -43.60956649933157
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -43.60956649933157,
+            -40.56658051354254
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -40.56658051354254,
+            -37.52359452775352
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -37.52359452775352,
+            -34.480608541964486
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -34.480608541964486,
+            -31.437622556175455
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -31.437622556175455,
+            -28.394636570386425
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -28.394636570386425,
+            -25.351650584597394
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -25.351650584597394,
+            -22.308664598808367
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -22.308664598808367,
+            -19.265678613019336
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -19.265678613019336,
+            -16.222692627230305
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -16.222692627230305,
+            -13.179706641441276
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -13.179706641441276,
+            -10.136720655652248
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -10.136720655652248,
+            -7.093734669863218
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -7.093734669863218,
+            -4.050748684074188
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -4.050748684074188,
+            -1.0077626982851589
+          ],
+          "count": 1375180
+        },
+        {
+          "bucket": [
+            -1.0077626982851589,
+            "inf"
+          ],
+          "count": 6379617
+        }
+      ],
+      "medianAbsoluteDeviation": 0.07205607400000247
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "correlations": {
+        "ID": 0.0075420870107295885,
+        "Beat": -0.4884598700069606,
+        "District": -0.5368584692566015,
+        "Ward": -0.44226462794350685,
+        "Community Area": 0.2405500429607888,
+        "X Coordinate": 0.9998298039107513,
+        "Y Coordinate": -0.4554391782318032,
+        "Year": 0.009382704047742864,
+        "Latitude": -0.4574089965675707,
+        "Longitude": 1.0
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 890640,
+      "uniqueValuesCount": 317403,
+      "entropy": 12.428525884421573,
+      "mostCommonValues": [
+        {
+          "value": -87.905227221,
+          "count": 14322
+        },
+        {
+          "value": -87.741528537,
+          "count": 10328
+        },
+        {
+          "value": -87.627876698,
+          "count": 8486
+        },
+        {
+          "value": -87.624096605,
+          "count": 4879
+        },
+        {
+          "value": -87.742728815,
+          "count": 3500
+        },
+        {
+          "value": -87.628203192,
+          "count": 3383
+        },
+        {
+          "value": -87.74147999,
+          "count": 3229
+        },
+        {
+          "value": -87.726422045,
+          "count": 2912
+        },
+        {
+          "value": -87.709271389,
+          "count": 2805
+        },
+        {
+          "value": -87.627841791,
+          "count": 2725
+        },
+        {
+          "value": -87.906463155,
+          "count": 2705
+        },
+        {
+          "value": -87.628068782,
+          "count": 2692
+        },
+        {
+          "value": -87.624485177,
+          "count": 2643
+        },
+        {
+          "value": -87.639235361,
+          "count": 2579
+        },
+        {
+          "value": -87.647000785,
+          "count": 2541
+        },
+        {
+          "value": -87.675049485,
+          "count": 2506
+        },
+        {
+          "value": -87.611461502,
+          "count": 2462
+        },
+        {
+          "value": -87.572998178,
+          "count": 2461
+        },
+        {
+          "value": -87.637460623,
+          "count": 2308
+        },
+        {
+          "value": -87.629070243,
+          "count": 2298
+        },
+        {
+          "value": -87.624131266,
+          "count": 2267
+        },
+        {
+          "value": -87.627844798,
+          "count": 2240
+        },
+        {
+          "value": -87.625185222,
+          "count": 2219
+        },
+        {
+          "value": -87.604893749,
+          "count": 2206
+        },
+        {
+          "value": -87.684273777,
+          "count": 2198
+        },
+        {
+          "value": -87.626155832,
+          "count": 2193
+        },
+        {
+          "value": -87.639680572,
+          "count": 2190
+        },
+        {
+          "value": -87.627760426,
+          "count": 2133
+        },
+        {
+          "value": -87.639158,
+          "count": 2108
+        },
+        {
+          "value": -87.643013039,
+          "count": 2105
+        },
+        {
+          "value": -87.625817031,
+          "count": 2084
+        },
+        {
+          "value": -87.573539169,
+          "count": 2062
+        },
+        {
+          "value": -87.653645803,
+          "count": 2061
+        },
+        {
+          "value": -87.638509526,
+          "count": 2052
+        },
+        {
+          "value": -87.634088181,
+          "count": 2052
+        },
+        {
+          "value": -87.627644063,
+          "count": 2049
+        },
+        {
+          "value": -87.628331665,
+          "count": 1957
+        },
+        {
+          "value": -87.639324074,
+          "count": 1914
+        },
+        {
+          "value": -87.900983721,
+          "count": 1912
+        },
+        {
+          "value": -87.630542489,
+          "count": 1910
+        },
+        {
+          "value": -87.586502002,
+          "count": 1901
+        },
+        {
+          "value": -87.905312411,
+          "count": 1862
+        },
+        {
+          "value": -87.625732415,
+          "count": 1858
+        },
+        {
+          "value": -87.60431945,
+          "count": 1858
+        },
+        {
+          "value": -87.640802922,
+          "count": 1849
+        },
+        {
+          "value": -87.624193896,
+          "count": 1841
+        },
+        {
+          "value": -87.666379171,
+          "count": 1819
+        },
+        {
+          "value": -87.704705156,
+          "count": 1815
+        },
+        {
+          "value": -87.76551063,
+          "count": 1806
+        },
+        {
+          "value": -87.6304532,
+          "count": 1802
+        }
+      ],
+      "missingValuesCount": 88022,
+      "kurtosis": 284.0726188166107,
+      "max": -87.524529378,
+      "mean": -87.67147626571303,
+      "min": -91.686565684,
+      "skewness": -4.593189803425628,
+      "standardDeviation": 0.0610715886651604,
+      "sum": -679884846.365122,
+      "zerosCount": 0,
+      "variance": 0.0037297389420865488,
+      "range": 4.1620363060000045,
+      "percentile5": -87.7670420879,
+      "percentile25": -87.713656519,
+      "percentile75": -87.628180906,
+      "percentile95": -87.574919245,
+      "median": -87.665820118,
+      "interquartileRange": 0.08547561299999984,
+      "mode": -87.905227221,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 88022
+        },
+        {
+          "value": -91.686565684,
+          "count": 118
+        },
+        {
+          "value": -87.939732936,
+          "count": 9
+        },
+        {
+          "value": -87.934567226,
+          "count": 2
+        },
+        {
+          "value": -87.934324301,
+          "count": 1
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": -87.524529378,
+          "count": 33
+        },
+        {
+          "value": -87.524529465,
+          "count": 9
+        },
+        {
+          "value": -87.524529859,
+          "count": 1
+        },
+        {
+          "value": -87.524529912,
+          "count": 2
+        },
+        {
+          "value": -87.524530393,
+          "count": 3
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -91.4784638687
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            -91.4784638687,
+            -91.2703620534
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -91.2703620534,
+            -91.0622602381
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -91.0622602381,
+            -90.8541584228
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -90.8541584228,
+            -90.6460566075
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -90.6460566075,
+            -90.4379547922
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -90.4379547922,
+            -90.2298529769
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -90.2298529769,
+            -90.0217511616
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -90.0217511616,
+            -89.8136493463
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -89.8136493463,
+            -89.605547531
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -89.605547531,
+            -89.3974457157
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -89.3974457157,
+            -89.1893439004
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -89.1893439004,
+            -88.9812420851
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -88.9812420851,
+            -88.7731402698
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -88.7731402698,
+            -88.5650384545
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -88.5650384545,
+            -88.3569366392
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -88.3569366392,
+            -88.1488348239
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -88.1488348239,
+            -87.9407330086
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -87.9407330086,
+            -87.7326311933
+          ],
+          "count": 1195474
+        },
+        {
+          "bucket": [
+            -87.7326311933,
+            "inf"
+          ],
+          "count": 6559323
+        }
+      ],
+      "zScoreOutliersCount": 30565,
+      "zScoreOutliersSample": [
+        {
+          "value": -91.686565684,
+          "zScore": -65.74398187511815
+        },
+        {
+          "value": -87.939732936,
+          "zScore": -4.392495367326285
+        },
+        {
+          "value": -87.934567226,
+          "zScore": -4.307910863911412
+        },
+        {
+          "value": -87.934324301,
+          "zScore": -4.303933155040487
+        },
+        {
+          "value": -87.934272688,
+          "zScore": -4.303088032109532
+        },
+        {
+          "value": -87.931591716,
+          "zScore": -4.259189190461703
+        },
+        {
+          "value": -87.931146534,
+          "zScore": -4.251899679746113
+        },
+        {
+          "value": -87.928909442,
+          "zScore": -4.215269029571497
+        },
+        {
+          "value": -87.928905765,
+          "zScore": -4.21520882154204
+        },
+        {
+          "value": -87.927881741,
+          "zScore": -4.198441221052433
+        },
+        {
+          "value": -87.927364891,
+          "zScore": -4.189978202301922
+        },
+        {
+          "value": -87.927137695,
+          "zScore": -4.1862580436330035
+        },
+        {
+          "value": -87.926948094,
+          "zScore": -4.18315347399356
+        },
+        {
+          "value": -87.926341146,
+          "zScore": -4.173215170221479
+        },
+        {
+          "value": -87.925672502,
+          "zScore": -4.162266642196983
+        },
+        {
+          "value": -87.925508862,
+          "zScore": -4.1595871638409525
+        },
+        {
+          "value": -87.925421672,
+          "zScore": -4.158159495068815
+        },
+        {
+          "value": -87.925269164,
+          "zScore": -4.155662294597487
+        },
+        {
+          "value": -87.924969698,
+          "zScore": -4.150758770609546
+        },
+        {
+          "value": -87.924511153,
+          "zScore": -4.143250451110689
+        },
+        {
+          "value": -87.92437363,
+          "zScore": -4.14099861841732
+        },
+        {
+          "value": -87.924297997,
+          "zScore": -4.139760186575906
+        },
+        {
+          "value": -87.92396353,
+          "zScore": -4.1342835483008535
+        },
+        {
+          "value": -87.923662025,
+          "zScore": -4.129346637266019
+        },
+        {
+          "value": -87.923654671,
+          "zScore": -4.129226221207337
+        },
+        {
+          "value": -87.923043574,
+          "zScore": -4.119219980771379
+        },
+        {
+          "value": -87.922967887,
+          "zScore": -4.1179806647218
+        },
+        {
+          "value": -87.922964929,
+          "zScore": -4.117932229761113
+        },
+        {
+          "value": -87.922699065,
+          "zScore": -4.113578912518018
+        },
+        {
+          "value": -87.922610239,
+          "zScore": -4.1121244555118865
+        },
+        {
+          "value": -87.92226601,
+          "zScore": -4.106487972041975
+        },
+        {
+          "value": -87.922209382,
+          "zScore": -4.105560732367462
+        },
+        {
+          "value": -87.921890087,
+          "zScore": -4.1003325238503745
+        },
+        {
+          "value": -87.921192415,
+          "zScore": -4.088908684791163
+        },
+        {
+          "value": -87.919996132,
+          "zScore": -4.069320476490939
+        },
+        {
+          "value": -87.919993768,
+          "zScore": -4.069281767820536
+        },
+        {
+          "value": -87.919663829,
+          "zScore": -4.0638792720412695
+        },
+        {
+          "value": -87.919273996,
+          "zScore": -4.057496058364985
+        },
+        {
+          "value": -87.918284352,
+          "zScore": -4.041291403768123
+        },
+        {
+          "value": -87.91807955,
+          "zScore": -4.037937929518062
+        },
+        {
+          "value": -87.917878938,
+          "zScore": -4.03465306327526
+        },
+        {
+          "value": -87.917644638,
+          "zScore": -4.03081658210417
+        },
+        {
+          "value": -87.917438692,
+          "zScore": -4.02744437573955
+        },
+        {
+          "value": -87.917299296,
+          "zScore": -4.025161874120459
+        },
+        {
+          "value": -87.917033962,
+          "zScore": -4.020817235217323
+        },
+        {
+          "value": -87.915852844,
+          "zScore": -4.00147734205553
+        },
+        {
+          "value": -87.915685098,
+          "zScore": -3.9987306311271116
+        },
+        {
+          "value": -87.915678439,
+          "zScore": -3.998621595155742
+        },
+        {
+          "value": -87.915105451,
+          "zScore": -3.9892393601013474
+        },
+        {
+          "value": -87.914869723,
+          "zScore": -3.9853794965353386
+        }
+      ],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -62.3364757032881
+          ],
+          "count": 118
+        },
+        {
+          "bucket": [
+            -62.3364757032881,
+            -58.92896953145805
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -58.92896953145805,
+            -55.521463359628
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -55.521463359628,
+            -52.11395718779795
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -52.11395718779795,
+            -48.70645101596789
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -48.70645101596789,
+            -45.29894484413784
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -45.29894484413784,
+            -41.89143867230779
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -41.89143867230779,
+            -38.48393250047774
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -38.48393250047774,
+            -35.07642632864769
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -35.07642632864769,
+            -31.66892015681764
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -31.66892015681764,
+            -28.26141398498759
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -28.26141398498759,
+            -24.85390781315754
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -24.85390781315754,
+            -21.44640164132749
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -21.44640164132749,
+            -18.03889546949744
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -18.03889546949744,
+            -14.63138929766739
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -14.63138929766739,
+            -11.22388312583734
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -11.22388312583734,
+            -7.816376954007288
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -7.816376954007288,
+            -4.408870782177238
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            -4.408870782177238,
+            -1.0013646103471872
+          ],
+          "count": 1195474
+        },
+        {
+          "bucket": [
+            -1.0013646103471872,
+            "inf"
+          ],
+          "count": 6559323
+        }
+      ],
+      "medianAbsoluteDeviation": 0.041276206000006255
+    },
+    {
+      "name": "Location",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 892491,
+      "uniqueValuesCount": 318676,
+      "entropy": 12.430057030479187,
+      "mostCommonValues": [
+        {
+          "value": "(41.976290414, -87.905227221)",
+          "count": 14322
+        },
+        {
+          "value": "(41.754592961, -87.741528537)",
+          "count": 10328
+        },
+        {
+          "value": "(41.883500187, -87.627876698)",
+          "count": 8486
+        },
+        {
+          "value": "(41.897895128, -87.624096605)",
+          "count": 4874
+        },
+        {
+          "value": "(41.909664252, -87.742728815)",
+          "count": 3500
+        },
+        {
+          "value": "(41.896888586, -87.628203192)",
+          "count": 3383
+        },
+        {
+          "value": "(41.788987036, -87.74147999)",
+          "count": 3229
+        },
+        {
+          "value": "(41.885487535, -87.726422045)",
+          "count": 2912
+        },
+        {
+          "value": "(41.868180939, -87.709271389)",
+          "count": 2805
+        },
+        {
+          "value": "(41.88233367, -87.627841791)",
+          "count": 2725
+        },
+        {
+          "value": "(41.979006297, -87.906463155)",
+          "count": 2705
+        },
+        {
+          "value": "(41.736259984, -87.628068782)",
+          "count": 2692
+        },
+        {
+          "value": "(41.721627204, -87.624485177)",
+          "count": 2643
+        },
+        {
+          "value": "(41.868541914, -87.639235361)",
+          "count": 2579
+        },
+        {
+          "value": "(41.904192368, -87.647000785)",
+          "count": 2541
+        },
+        {
+          "value": "(42.019399237, -87.675049485)",
+          "count": 2506
+        },
+        {
+          "value": "(41.891990384, -87.611461502)",
+          "count": 2462
+        },
+        {
+          "value": "(41.737094305, -87.572998178)",
+          "count": 2461
+        },
+        {
+          "value": "(41.68995741, -87.637460623)",
+          "count": 2308
+        },
+        {
+          "value": "(41.736148121, -87.629070243)",
+          "count": 2298
+        },
+        {
+          "value": "(41.899410159, -87.624131266)",
+          "count": 2267
+        },
+        {
+          "value": "(41.882394062, -87.627844798)",
+          "count": 2240
+        },
+        {
+          "value": "(41.750940757, -87.625185222)",
+          "count": 2219
+        },
+        {
+          "value": "(41.739265865, -87.604893749)",
+          "count": 2206
+        },
+        {
+          "value": "(41.929743818, -87.684273777)",
+          "count": 2198
+        },
+        {
+          "value": "(41.891694878, -87.626155832)",
+          "count": 2193
+        },
+        {
+          "value": "(41.907153315, -87.639680572)",
+          "count": 2190
+        },
+        {
+          "value": "(41.88171846, -87.627760426)",
+          "count": 2133
+        },
+        {
+          "value": "(41.864493678, -87.639158)",
+          "count": 2108
+        },
+        {
+          "value": "(41.874363279, -87.643013039)",
+          "count": 2105
+        },
+        {
+          "value": "(41.866810739, -87.625817031)",
+          "count": 2084
+        },
+        {
+          "value": "(41.766102387, -87.573539169)",
+          "count": 2062
+        },
+        {
+          "value": "(41.706070186, -87.653645803)",
+          "count": 2061
+        },
+        {
+          "value": "(41.742710224, -87.634088181)",
+          "count": 2052
+        },
+        {
+          "value": "(41.908430535, -87.638509526)",
+          "count": 2052
+        },
+        {
+          "value": "(41.876607964, -87.627644063)",
+          "count": 2049
+        },
+        {
+          "value": "(41.814007401, -87.628331665)",
+          "count": 1957
+        },
+        {
+          "value": "(41.903775756, -87.639324074)",
+          "count": 1914
+        },
+        {
+          "value": "(41.976762981, -87.900983721)",
+          "count": 1912
+        },
+        {
+          "value": "(41.795991039, -87.630542489)",
+          "count": 1910
+        },
+        {
+          "value": "(41.78210152, -87.586502002)",
+          "count": 1901
+        },
+        {
+          "value": "(41.976200173, -87.905312411)",
+          "count": 1862
+        },
+        {
+          "value": "(41.769185486, -87.625732415)",
+          "count": 1858
+        },
+        {
+          "value": "(41.692833841, -87.60431945)",
+          "count": 1858
+        },
+        {
+          "value": "(41.777309867, -87.640802922)",
+          "count": 1849
+        },
+        {
+          "value": "(41.892753031, -87.624193896)",
+          "count": 1841
+        },
+        {
+          "value": "(41.866331725, -87.666379171)",
+          "count": 1819
+        },
+        {
+          "value": "(41.873699424, -87.704705156)",
+          "count": 1815
+        },
+        {
+          "value": "(41.918711651, -87.76551063)",
+          "count": 1806
+        },
+        {
+          "value": "(41.86821682, -87.6304532)",
+          "count": 1802
+        }
+      ],
+      "missingValuesCount": 88022,
+      "max": 29,
+      "mean": 28.781040926947618,
+      "min": 23,
+      "standardDeviation": 0.49322808636751236,
+      "median": 29.0,
+      "mode": 29,
+      "valueDistribution": [
+        {
+          "bucket": [
+            23,
+            24
+          ],
+          "count": 13
+        },
+        {
+          "bucket": [
+            24,
+            25
+          ],
+          "count": 245
+        },
+        {
+          "bucket": [
+            25,
+            26
+          ],
+          "count": 2176
+        },
+        {
+          "bucket": [
+            26,
+            27
+          ],
+          "count": 26528
+        },
+        {
+          "bucket": [
+            27,
+            28
+          ],
+          "count": 184892
+        },
+        {
+          "bucket": [
+            28,
+            29
+          ],
+          "count": 1238634
+        },
+        {
+          "bucket": [
+            29,
+            "inf"
+          ],
+          "count": 6302427
+        }
+      ],
+      "zScoreOutliersCount": 213854,
+      "zScoreOutliersSample": [
+        {
+          "value": 23,
+          "zScore": -11.720826706206811
+        },
+        {
+          "value": 24,
+          "zScore": -9.693367144111063
+        },
+        {
+          "value": 25,
+          "zScore": -7.665907582015316
+        },
+        {
+          "value": 26,
+          "zScore": -5.638448019919569
+        },
+        {
+          "value": 27,
+          "zScore": -3.610988457823822
+        }
+      ]
+    }
+  ],
+  "jobName": "ChicagoCrimeProfileJob-1",
+  "jobRunId": "db_390f6d1d9fa60055af8b352f8b981115a03eebe52cdfe2490cfe025fc2058f3f",
+  "location": "s3://data-chicago-crime/ChicagoCrimeDataset_390f6d1d9fa60055af8b352f8b981115a03eebe52cdfe2490cfe025fc2058f3f.json",
+  "startedOn": "2024-11-18T22:13:00.098727",
+  "writtenOn": "2024-11-18T22:22:41.563606",
+  "version": "1.0"
+}
